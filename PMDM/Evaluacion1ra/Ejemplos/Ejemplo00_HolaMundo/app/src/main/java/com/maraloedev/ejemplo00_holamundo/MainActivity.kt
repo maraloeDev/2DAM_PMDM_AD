@@ -71,5 +71,16 @@ class MainActivity : AppCompatActivity() {
             "2022" -> Log.d("Depurando", "Es del 2022")
             else -> Log.d("Depurando", "Es de otro año")
         }
+
+        //Bucles
+
+        var arrayNumeros = arrayOf(1,2,3,4,5,6,7,8,9,10)
+        var arrayNumeros2 = arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
+        var arrayNumeros3 = intArrayOf(1,2,3,4,5,6,7,8,9,10)
+        var arrayCaracteres = charArrayOf('a','b', 'c', 'd', 'e', 'f','g', 'h')
+
+        for (numero in arrayNumeros) {
+            Log.d("BFor", "El numero es $numero")
+        }
     }
 }
