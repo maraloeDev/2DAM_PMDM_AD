@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ejemplo01_ComponentesBasicos</string>
     <string name="botonRecuperar">Recuperar Nombre</string>
+    <string name="HintName">Name</string>
 </resources>
