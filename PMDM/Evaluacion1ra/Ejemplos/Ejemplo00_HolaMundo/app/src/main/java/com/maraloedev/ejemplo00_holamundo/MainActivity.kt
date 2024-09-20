@@ -74,13 +74,50 @@ class MainActivity : AppCompatActivity() {
 
         //Bucles
 
-        var arrayNumeros = arrayOf(1,2,3,4,5,6,7,8,9,10)
-        var arrayNumeros2 = arrayOf<Int>(1,2,3,4,5,6,7,8,9,10)
-        var arrayNumeros3 = intArrayOf(1,2,3,4,5,6,7,8,9,10)
-        var arrayCaracteres = charArrayOf('a','b', 'c', 'd', 'e', 'f','g', 'h')
+        var arrayNumeros = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        var arrayNumeros2 = arrayOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        var arrayNumeros3 = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        var arrayCaracteres = charArrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
 
+        //Bucle for
         for (numero in arrayNumeros) {
             Log.d("BFor", "El numero es $numero")
+        }
+
+        for (i in 0 until arrayNumeros.size) {
+            Log.d("BFor", "El numero es ${arrayNumeros.get(i)}")
+        }
+
+        //Do While
+
+        var i: Int = 0
+
+        do {
+            Log.d("BDW", "El numero es ${arrayNumeros.get(i)}")
+            i++
+
+        } while (i < arrayNumeros.size)
+
+        //Bucle While
+
+        while (i < arrayNumeros.size) {
+            Log.d("BDW", "El numero es ${arrayNumeros.get(i)}")
+            i++
+        }
+
+        //ArrayBidimensional (Se recorren 2 veces con un bucle for)
+
+        var matriz:Array<Array<Int>> = arrayOf(
+            arrayOf(1, 2, 3),
+            arrayOf(4, 5, 6),
+            arrayOf(7, 8, 9),
+        )
+
+        for (index in matriz) {
+            for (elemento in index){
+                Log.d("Matriz", "Los numeros son $elemento")
+            }
+
         }
     }
 }
