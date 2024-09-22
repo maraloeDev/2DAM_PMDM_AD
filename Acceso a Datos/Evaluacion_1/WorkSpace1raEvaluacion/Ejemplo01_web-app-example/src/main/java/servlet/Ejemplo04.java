@@ -40,7 +40,7 @@ public class Ejemplo04 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/plain");
-		response.getWriter().append("Recogida de parmetro: " + request.getParameter("param")); //Para acceder a los usamos 
+		response.getWriter().append("Recogida de parmetro: " + request.getParameter("param")); //Para acceder a los parametros :
 															 //request.getParameter() pasando como argumento el nombre del parámetro.
 	}
 

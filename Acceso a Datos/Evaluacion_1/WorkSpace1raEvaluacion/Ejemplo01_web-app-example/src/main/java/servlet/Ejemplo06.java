@@ -42,9 +42,14 @@ public class Ejemplo06 extends HttpServlet {
 		    + "<TH>Header Name</TH><TH>Header Value</TH></TR>\n"
 		);
 
+		//Devuelve el valor de la cabecera
 		Enumeration<String> headerNames = request.getHeaderNames();
+		
+		//Mientras haya mas elementos,
 		while (headerNames.hasMoreElements()) {
 		    String headerName = headerNames.nextElement();
+		    
+		    // Muestras en la resouesta del servidor, el nombre de las cabeceras, y 
 		    response.getWriter().append("<TR><TD>" + headerName + "</TD><TD>" + request.getHeader(headerName) + "</TD></TR>\n");
 		}
 		response.getWriter().append("</TABLE>\n</BODY>\n</HTML>");
