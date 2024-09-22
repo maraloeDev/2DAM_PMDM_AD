@@ -89,7 +89,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Do While
-
         var i: Int = 0
 
         do {
@@ -99,14 +98,12 @@ class MainActivity : AppCompatActivity() {
         } while (i < arrayNumeros.size)
 
         //Bucle While
-
         while (i < arrayNumeros.size) {
             Log.d("BDW", "El numero es ${arrayNumeros.get(i)}")
             i++
         }
 
         //ArrayBidimensional (Se recorren 2 veces con un bucle for)
-
         var matriz:Array<Array<Int>> = arrayOf(
             arrayOf(1, 2, 3),
             arrayOf(4, 5, 6),

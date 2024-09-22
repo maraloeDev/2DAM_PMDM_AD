@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         val nombre = findViewById<EditText>(R.id.etNombreUsuario)
         var textoNombre = findViewById<TextView>(R.id.tv_Saludo)
 
-
         boton.setOnClickListener(View.OnClickListener {
             textoNombre.text ="Hola ${nombre.text}"
         })
