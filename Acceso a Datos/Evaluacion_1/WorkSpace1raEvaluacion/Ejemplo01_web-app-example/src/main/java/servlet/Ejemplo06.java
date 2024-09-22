@@ -1,13 +1,11 @@
 package servlet;
 
-import jakarta.servlet.ServletConfig;
+
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Enumeration;
 
 /**
@@ -25,41 +23,31 @@ public class Ejemplo06 extends HttpServlet {
     }
 
 	/**
-	 * @see Servlet#init(ServletConfig)
-	 */
-	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
-	}
-
-	/**
-	 * @see Servlet#destroy()
-	 */
-	public void destroy() {
-		// TODO Auto-generated method stub
-	}
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		String title = "MOSTRAR CABECERAS REQUEST";
-		String docType = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 " + "Transitional//EN\">\n";
-		out.println(docType + "<HTML>\n" + "<HEAD><TITLE>" + title + "</TITLE></HEAD>\n"
-		    + "<BODY>\n" + "<H1 ALIGN=\"CENTER\">" + title + "</H1>\n"
-		    + "<B>Request Method: </B>" + request.getMethod() + "<BR>\n" + "<B>Request URI: </B>"
-		    + request.getRequestURI() + "<BR>\n" + "<B>Request Protocol: </B>" + request.getProtocol()
-		    + "<BR><BR>\n" + "<TABLE BORDER=1 ALIGN=\"CENTER\">\n" + "<TR>\n"
-		    + "<TH>Header Name<TH>Header Value>");
+		response.getWriter().append(
+		    "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">"
+		    + "\n"
+		    + "<HTML>\n"
+		    + "<HEAD><TITLE> MOSTRAR CABECERAS REQUEST </TITLE></HEAD>\n"
+		    + "<BODY>\n"
+		    + "<H1 ALIGN=\"CENTER\"> MOSTRAR CABECERAS REQUEST</H1>\n"
+		    + "<B>Request Method: </B>" + request.getMethod() + "<BR>\n"
+		    + "<B>Request URI: </B>" + request.getRequestURI() + "<BR>\n"
+		    + "<B>Request Protocol: </B>" + request.getProtocol() + "<BR><BR>\n"
+		    + "<TABLE BORDER=1 ALIGN=\"CENTER\">\n"
+		    + "<TR>\n"
+		    + "<TH>Header Name</TH><TH>Header Value</TH></TR>\n"
+		);
+
 		Enumeration<String> headerNames = request.getHeaderNames();
-		
-		//recupera los valores de las cabezeras y nombres
 		while (headerNames.hasMoreElements()) {
 		    String headerName = headerNames.nextElement();
-		    out.println("<TR><TD>" + headerName);
-		    out.println(" <TD>" + request.getHeader(headerName));
+		    response.getWriter().append("<TR><TD>" + headerName + "</TD><TD>" + request.getHeader(headerName) + "</TD></TR>\n");
 		}
-
+		response.getWriter().append("</TABLE>\n</BODY>\n</HTML>");
+		response.getWriter().close();
 	}
 }

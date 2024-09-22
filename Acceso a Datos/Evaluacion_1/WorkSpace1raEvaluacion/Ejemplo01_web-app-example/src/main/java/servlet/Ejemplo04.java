@@ -2,7 +2,6 @@ package servlet;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -22,16 +21,27 @@ public class Ejemplo04 extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 */
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see Servlet#destroy()
+	 */
+	public void destroy() {
+		// TODO Auto-generated method stub
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-    
-    // response.setContentType("text/html"); es para mostrar cajitas
-    // response.setContentType("text/plain"); es para mostrar algo basico
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/plain");
-		response.getWriter().append("Recogida de parametro: " + request.getParameter("color"));
-		response.getWriter().close();
+		response.getWriter().append("Recogida de parmetro: " + request.getParameter("param")); //Para acceder a los usamos 
+															 //request.getParameter() pasando como argumento el nombre del parámetro.
 	}
+
 }

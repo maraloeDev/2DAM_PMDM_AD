@@ -2,7 +2,6 @@ package servlet;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -26,7 +25,9 @@ public class Ejemplo03 extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
     
-    //En este metodo podemos hacer todas las operaciones de inicialización
+    // Este metodo inicializa el servlet
+    
+    //Método que se ejecuta al inicio del ciclo de vida de un servlet.
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 	}
@@ -35,7 +36,9 @@ public class Ejemplo03 extends HttpServlet {
 	 * @see Servlet#destroy()
 	 */
 	
-	//destroy() para realizar las acciones que se deseen realizar sólo una vez al destruir el servlet.
+	//En este metodo, se indica las operaciones que quieres hacer una vez que se destruya el servlet
+	
+	//método que se ejecuta al final del ciclo de vida del servlet.
 	public void destroy() {
 		// TODO Auto-generated method stub
 	}
@@ -44,10 +47,14 @@ public class Ejemplo03 extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	
-	//HttpServletRequest, representa la petición del cliente, y HttpServletResponse, representa la respuesta del servidor
+	//El método service se usa cuando el servidor web recibe una petición para un servlet, se pasan 2 tipos de parametros
 	
-	//Este método será el que se ejecute cada vez que se realice una petición al servlet.
+						 //HttpServletRequest, representa la petición del cliente
+													 //HttpServletResponse, representa la respuesta del servidor
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		response.setContentType("text/plain"); //Sirve para establecer el tipo de respuesta que se va a dar, si  trata de una página web, se usa "text/html".
+		response.getWriter().append("Hola, que tal");
+		response.getWriter().close();
 	}
+
 }
