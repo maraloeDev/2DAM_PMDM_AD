@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         //Escribir por consola
         Log.d("Depurando", "Saludo en consola")
 
-        //Val el un valor que NO se puede modificar
+        //Las constantes (val) no puede modificar su valor
         val numero: Int = 10
         //numero = numero *10
 
@@ -24,12 +24,26 @@ class MainActivity : AppCompatActivity() {
         Log.d("Depurando en Kotlin", "El numero es $numero")
         Log.d("Depurando en Kotlin", getString(R.string.Saludo_log))
 
-        //Int, Long. Float, Double, Char, String, Boolean
-        var altura: Double = 1.75
-        var datoFloat: Float = 3.49f
-        var datoLong: Long = 1L
+        //Tipos de datos
+
+        //String
+        val myString:String = "Hola"
+
+        //Int
+        val myInt:Int = 24
+
+        //Double
+        val myDouble:Double = 24.5
+
+        //Float
+        val myFloat:Float = 24.5f
+
+        //Boolean
+        val myBoolean:Boolean = true
 
         //Estructuras de control
+
+
         if (numero == 10 && numero1 == 20) {
 
             Log.d("Depurando", "El numero es mayor que 10")

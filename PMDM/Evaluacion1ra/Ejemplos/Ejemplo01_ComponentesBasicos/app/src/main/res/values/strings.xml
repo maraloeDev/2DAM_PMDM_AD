@@ -2,4 +2,8 @@
     <string name="app_name">Ejemplo01_ComponentesBasicos</string>
     <string name="botonRecuperar">Recuperar Nombre</string>
     <string name="HintName">Name</string>
+    <string name="rb_Soltero">Soltero</string>
+    <string name="rb_Casado">Casado</string>
+    <string name="rb_NSNC">NS/NC</string>
+    <string name="sw_Activar">Activar</string>
 </resources>

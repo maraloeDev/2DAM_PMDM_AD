@@ -34,42 +34,34 @@
         android:text="@string/botonRecuperar"
         android:layout_weight="0" />
 
-    <EditText
-        android:id="@+id/ed_date"
+    <Switch
+        android:id="@+id/sw_ActivadoDesactivado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        android:textSize="24sp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:text="@string/sw_Activar" />
 
-    <EditText
-        android:id="@+id/et_Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/et_NumberPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberPassword"
-        android:textSize="24sp" />
-
-    <com.google.android.material.textfield.TextInputLayout
+    <RadioGroup
+        android:id="@+id/rg_EstadoCivil"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tit_Dato"
+        <RadioButton
+            android:id="@+id/rb_Soltero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="hint"
-            android:textSize="24sp"
-            tools:ignore="HardcodedText" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:text="@string/rb_Soltero" />
+
+        <RadioButton
+            android:id="@+id/rb_Casado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_Casado" />
+
+        <RadioButton
+            android:id="@+id/rb_NSNC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_NSNC" />
+    </RadioGroup>
 
 </LinearLayout>

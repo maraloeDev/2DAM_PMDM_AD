@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejercicio00_Calculadora</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn_4">4</string>
+    <string name="btnClear">C</string>
+    <string name="hintRes">Escribe algo</string>
+</resources>
