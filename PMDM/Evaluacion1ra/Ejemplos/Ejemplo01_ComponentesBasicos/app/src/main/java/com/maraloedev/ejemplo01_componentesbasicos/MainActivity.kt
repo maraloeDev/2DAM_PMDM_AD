@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
-import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.CompoundButton
 import android.widget.EditText
@@ -15,7 +14,6 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.maraloedev.ejemplo01_componentesbasicos.databinding.ActivityMainBinding
-import java.util.Objects
 
 
 @SuppressLint("StaticFieldLeak")
@@ -32,11 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        val boton = binding.bRecuperarNombre
         val nombre = findViewById<EditText>(R.id.etNombreUsuario)
-        val textoNombre = findViewById<TextView>(R.id.tv_Saludo)
 
-        binding.bRecuperarNombre.setOnClickListener(View.OnClickListener {
+        binding.bRecuperarNombre.setOnClickListener{
 
             // Obtener el estado civil seleccionado al hacer clic en el botón
             val estadoCivil: String = findViewById<RadioButton>(binding.rgEstadoCivil.checkedRadioButtonId).text.toString()
@@ -44,10 +40,10 @@ class MainActivity : AppCompatActivity() {
 
             // Usar el valor actualizado de estadoCivil
             binding.tvSaludo.text = "Hola ${nombre.text}, estás $estadoCivil y el color favorito es ${spinnerColor.selectedItem}"
-        })
+        }
 
 
-        binding.swActivadoDesactivado.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { compoundButton, isChecked ->
+        binding.swActivadoDesactivado.setOnCheckedChangeListener{ compoundButton, isChecked ->
 
             if (isChecked) {
                 // Habilitar el botón si el switch está activado
@@ -58,21 +54,25 @@ class MainActivity : AppCompatActivity() {
                 binding.bRecuperarNombre.isEnabled = false
                 binding.swActivadoDesactivado.text ="Desctivado"
             }
-        })
+        }
 
-        val datosDesplegables = arrayOf("Rojo", "Azul", "Negro")
-        binding.spColores2.adapter=ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datosDesplegables)
 
-        binding.spColores.setSelection(1)
         binding.spColores.onItemSelectedListener=object: AdapterView.OnItemSelectedListener{
-            
             override fun onItemSelected(parent: AdapterView<*>?, view: android.view.View?, position: Int, id: Long) {
                 Log.d("depurando", "Seleccionado: ${binding.spColores.selectedItem}")
+                //val temp:String=(parent as ArrayAdapter<String>).getItem(position)
+                //Log.d("depurando", "Seleccionado: ${temp}")
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Log.d("depurando", "Nada seleccionado")
             }
         }
+
+        //Metemos los datos del desplegable 2 con un adaptador
+        var datos_desplegable= arrayOf("Rojo", "Verde", "Azul", "Amarillo")
+        binding.spColores2.adapter=ArrayAdapter(this, android.R.layout.simple_spinner_item, datos_desplegable)
+
+
     }
 }
