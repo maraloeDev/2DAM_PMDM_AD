@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Servlet implementation class Ejemplo05
@@ -21,11 +22,14 @@ public class Ejemplo05 extends HttpServlet {
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub	
 		response.setContentType("text/html");		
 		response.getWriter().append("Nombre:" + request.getParameter("nombre"));
 		response.getWriter().append("<br>");
-		response.getWriter().append("Apellidos:" + request.getParameter("apellidos"));
+		if(request.getParameter("apellidos") == null || request.getParameter("apellidos").isEmpty()) {
+			response.getWriter().append("Valor no especificado");
+		}	else {
+			response.getWriter().append("Apellidos:" + request.getParameter("apellidos")); 
+		}	
 	}
-
 }
