@@ -6,4 +6,10 @@
     <string name="rb_Casado">Casado</string>
     <string name="rb_NSNC">NS/NC</string>
     <string name="sw_Activar">Activar</string>
+    <string-array name="Colores">
+        <item>Rojo</item>
+        <item>Amarillo</item>
+        <item>Azul</item>
+        <item>Negro</item>
+    </string-array>
 </resources>

@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnDelete.setOnClickListener {
+
+        }
+
         listas()
         recorrido()
         resultado()
@@ -72,6 +76,12 @@ class MainActivity : AppCompatActivity() {
 
                 operacion = tvResultado.text.toString()
             }
+        }
+
+        binding.btnDelete.setOnClickListener {
+
+            val text =""
+            tvResultado.text = text.dropLast(1)
         }
     }
 
