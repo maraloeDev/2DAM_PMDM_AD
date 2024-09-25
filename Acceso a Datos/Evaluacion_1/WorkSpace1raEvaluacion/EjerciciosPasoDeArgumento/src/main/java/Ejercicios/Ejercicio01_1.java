@@ -2,7 +2,6 @@ package Ejercicios;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -36,10 +35,6 @@ public class Ejercicio01_1 extends HttpServlet {
 		// TODO Auto-generated method stub
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	
 	/**
 	 * Crear una aplicación que desde URL deberá aparecer en pantalla un botón con el texto “Salúdame”
@@ -53,14 +48,9 @@ public class Ejercicio01_1 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		 response.setContentType("text/html"); // Tipo de contenido a enviar
-		response.getWriter().append("<html>\r\n"
-				+ "    <head>\r\n"
-				+ "        <body>\r\n"
-				+ "            Hola Mundo\r\n"
-				+ "        </body>\r\n"
-				+ "    </head>\r\n"
-				+ "</html>");
+		response.setContentType("text/html"); // Tipo de contenido a enviar
+		response.setContentType("text/html");
+	    response.getWriter().append("<html><body>Hola Mundo</body></html>").close();
 	}
 
 }

@@ -35,35 +35,39 @@ public class Ejercicio01_4 extends HttpServlet {
 		// TODO Auto-generated method stub
 	}
 
+	
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
+	 * El método GET recibiendo por parámetro los datos (para concatenar parámetros
+	 * en la URL utiliza el carácter &
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/**
-		 * El método GET recibiendo por parámetro los datos (para concatenar parámetros
-		 * en la URL utiliza el carácter &
-		 */
 
 		response.setContentType("text/html");
+if(request.getParameter("mensaje")!=null || request.getParameter("firma") !=null) {
+	
+	
+	String mensaje = request.getParameter("mensaje");
+	String firma = request.getParameter("firma");
 
-		String mensaje = request.getParameter("mensaje");
-		String firma = request.getParameter("firma");
-
-		response.getWriter().append("Mensaje: " + mensaje);
-		response.getWriter().append("<br>");
-		response.getWriter().append("Firma: " + firma);
+	response.getWriter().append("Mensaje: " + mensaje);
+	response.getWriter().append("<br>");
+	response.getWriter().append("Firma: " + firma);
+	response.getWriter().close();
+} else {
+	response.getWriter().append("No se ha recogido ningun parametro");
+}
 
 	}
 
+	/**
+	 * Por último, crea la siguiente interfaz que le permita introducir al usuario
+	 * el saludo que quiera y su firma. Utilizarás un servlet nuevo implementando el
+	 * método POST recibiendo los datos de formulario
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/**
-		 * Por último, crea la siguiente interfaz que le permita introducir al usuario
-		 * el saludo que quiera y su firma. Utilizarás un servlet nuevo implementando el
-		 * método POST recibiendo los datos de formulario
-		 */
+
 		response.setContentType("text/html");
 
 		String mensaje = request.getParameter("mensaje");
@@ -72,6 +76,7 @@ public class Ejercicio01_4 extends HttpServlet {
 		response.getWriter().append("Mensaje: " + mensaje);
 		response.getWriter().append("<br>");
 		response.getWriter().append("Firma: " + firma);
+		response.getWriter().close();
 	}
 
 }

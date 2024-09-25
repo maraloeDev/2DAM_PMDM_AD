@@ -35,10 +35,6 @@ public class Ejercicio01_2 extends HttpServlet {
 		// TODO Auto-generated method stub
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 
 	/**
 	 * Modifica el método GET para que recibiendo de la URL un parámetro llamado
@@ -49,26 +45,34 @@ public class Ejercicio01_2 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setContentType("text/plain");
 	    
-	    String idioma = request.getParameter("idioma");
+	    if(request.getParameter("idioma")!= null) {
+	    	
+	    	String idioma = request.getParameter("idioma");
 
-	    if (idioma != null) {
-	        switch (idioma) {
-	            case "Hola Mundo":
-	                response.getWriter().append("El idioma es Español");
-	                break;
-	            case "Hello World":
-	                response.getWriter().append("El idioma es Ingles");
-	                break;
-	            case "Hallo Welt":
-	                response.getWriter().append("El idioma es Aleman");
-	                break;
-	            default:
-	                response.getWriter().append("El idioma no está en nuestra base de datos");
-	                break;
-	        }
+		    if (idioma != null) {
+		        switch (idioma) {
+		            case "Hola Mundo":
+		                response.getWriter().append("El idioma es Español");
+		                break;
+		            case "Hello World":
+		                response.getWriter().append("El idioma es Ingles");
+		                break;
+		            case "Hallo Welt":
+		                response.getWriter().append("El idioma es Aleman");
+		                break;
+		            default:
+		                response.getWriter().append("El idioma no está en nuestra base de datos");
+		                break;
+		        }
+		    } else {
+		        response.getWriter().append("No hay param idioma");
+		    }
+		    response.getWriter().close();
 	    } else {
-	        response.getWriter().append("No hay param idioma");
+	    	response.getWriter().append("No se ha recogido ningun parametro");
 	    }
+	    
 	}
+	
 
 }
