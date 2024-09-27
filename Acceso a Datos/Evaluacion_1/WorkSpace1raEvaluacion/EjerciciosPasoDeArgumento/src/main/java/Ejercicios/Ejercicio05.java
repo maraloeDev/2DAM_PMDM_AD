@@ -41,32 +41,29 @@ public class Ejercicio05 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		response.setContentType("text/html");
-		
-		if(request.getParameter("asignaturas") != null || request.getParameter("sexo")!= null) {
-			
+
+		if (request.getParameter("asignaturas") != null || request.getParameter("sexo") != null) {
+
 			String asignaturas = request.getParameter("asignaturas");
 			String sexo = request.getParameter("sexo");
 			String actividades[] = request.getParameterValues("actividades");
-			
-			response.getWriter().append("<html>\r\n"
-					+ "    <head>\r\n"
-					+ "        <body>\r\n"
-					+ "            <p><b>ASIGNATURA: "+ asignaturas +" </b></p>\r\n"
-					+ "            <p><b>SEXO: "+ sexo+"</b></p>\r\n");
-			
+
+			response.getWriter()
+					.append("<html>\r\n" + "    <head>\r\n" + "        <body>\r\n" + "            <p><b>ASIGNATURA: "
+							+ asignaturas + " </b></p>\r\n" + "            <p><b>SEXO: " + sexo + "</b></p>\r\n");
+
 			if (actividades != null) {
-	            response.getWriter().append("<p><b>ACTIVIDADES:</b></p>");
-	            for (String actividad : actividades) {
-	                response.getWriter().append("<ul>\r\n"
-	                		+ "            <li>"+actividad +"</li>\r\n"
-	                		+ "        </ul>");
-	            }
-	        } else {
-	        	response.getWriter().append("<p>No actividades selected</p>\r\n");
-	        }
-			
+				response.getWriter().append("<p><b>ACTIVIDADES:</b></p>");
+				for (String actividad : actividades) {
+					response.getWriter()
+							.append("<ul>\r\n" + "            <li>" + actividad + "</li>\r\n" + "        </ul>");
+				}
+			} else {
+				response.getWriter().append("<p>No actividades selected</p>\r\n");
+			}
+
 			response.getWriter().append("</body>");
 			response.getWriter().append("</html>");
 			response.getWriter().close();
