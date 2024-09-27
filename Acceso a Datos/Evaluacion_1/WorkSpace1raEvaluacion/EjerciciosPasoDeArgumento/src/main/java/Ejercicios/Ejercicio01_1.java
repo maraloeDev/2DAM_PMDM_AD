@@ -49,7 +49,6 @@ public class Ejercicio01_1 extends HttpServlet {
 			throws ServletException, IOException {
 		
 		response.setContentType("text/html"); // Tipo de contenido a enviar
-		response.setContentType("text/html");
 	    response.getWriter().append("<html><body>Hola Mundo</body></html>").close();
 	}
 

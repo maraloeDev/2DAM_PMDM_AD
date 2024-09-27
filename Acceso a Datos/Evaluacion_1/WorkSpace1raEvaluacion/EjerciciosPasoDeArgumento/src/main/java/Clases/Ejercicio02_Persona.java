@@ -1,4 +1,4 @@
-package Ejercicios;
+package Clases;
 
 public class Ejercicio02_Persona {
 	

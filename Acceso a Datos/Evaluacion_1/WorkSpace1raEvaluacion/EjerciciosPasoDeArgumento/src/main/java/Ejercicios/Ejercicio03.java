@@ -43,6 +43,8 @@ public class Ejercicio03 extends HttpServlet {
 
 		response.setContentType("text/html");
 		
+		if(request.getParameter("nombre") != null || request.getParameter("apellidos") != null || request.getParameter("direccion") != null || request.getParameter("tarjeta") != null || request.getParameter("numTarjeta") != null) {
+		
 			// Datos a recojer del parametro
 			String nombre = request.getParameter("nombre");
 			String apellido = request.getParameter("apellido");
@@ -74,6 +76,10 @@ public class Ejercicio03 extends HttpServlet {
 			response.getWriter().append("</body>");
 			response.getWriter().append("</html>");
 			response.getWriter().close();
+			
+		} else {
+			response.getWriter().append("No has pasado parametros");
+		}
 
 		}
 	}

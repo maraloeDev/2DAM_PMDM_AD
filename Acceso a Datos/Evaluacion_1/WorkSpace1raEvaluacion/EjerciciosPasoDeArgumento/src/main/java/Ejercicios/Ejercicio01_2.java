@@ -51,14 +51,14 @@ public class Ejercicio01_2 extends HttpServlet {
 
 		    if (idioma != null) {
 		        switch (idioma) {
-		            case "Hola Mundo":
-		                response.getWriter().append("El idioma es Español");
+		            case "Español":
+		                response.getWriter().append("Hola Mundo");
 		                break;
-		            case "Hello World":
-		                response.getWriter().append("El idioma es Ingles");
+		            case "Ingles":
+		                response.getWriter().append("Hello World");
 		                break;
-		            case "Hallo Welt":
-		                response.getWriter().append("El idioma es Aleman");
+		            case "Aleman":
+		                response.getWriter().append("Hallo Welt");
 		                break;
 		            default:
 		                response.getWriter().append("El idioma no está en nuestra base de datos");
