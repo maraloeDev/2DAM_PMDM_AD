@@ -61,11 +61,11 @@
          AJP  Connector: /docs/config/ajp.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" maxParameterCount="1000" port="8081" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" maxParameterCount="1000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
-               port="8081" protocol="HTTP/1.1"
+               port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443"
                maxParameterCount="1000"
@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Ejemplo01_web-app-example" path="/web-app-example" reloadable="true" source="org.eclipse.jst.jee.server:Ejemplo01_web-app-example"/><Context docBase="Actividad04" path="/Actividad04" reloadable="true" source="org.eclipse.jst.jee.server:Actividad04"/><Context docBase="EjerciciosPasoDeArgumento" path="/EjerciciosPasoDeArgumento" reloadable="true" source="org.eclipse.jst.jee.server:EjerciciosPasoDeArgumento"/><Context docBase="EjerciciosSergio" path="/EjerciciosSergio" reloadable="true" source="org.eclipse.jst.jee.server:EjerciciosSergio"/></Host>
+      <Context docBase="Ejemplos" path="/Ejemplos" reloadable="true" source="org.eclipse.jst.jee.server:Ejemplos"/><Context docBase="EjerciciosContexto" path="/EjerciciosContexto" reloadable="true" source="org.eclipse.jst.jee.server:EjerciciosContexto"/></Host>
     </Engine>
   </Service>
 </Server>
