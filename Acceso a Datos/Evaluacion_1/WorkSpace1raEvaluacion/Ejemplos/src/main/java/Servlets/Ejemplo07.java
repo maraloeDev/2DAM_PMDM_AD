@@ -29,16 +29,13 @@ public class Ejemplo07 extends HttpServlet {
 	 */
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        
-        // No podemos crear o modificar parámetros de inicialización una vez que el contexto está en funcionamiento
-        // Este código comentado intenta cambiar un parámetro de inicialización, lo cual no está permitido en tiempo de ejecución
-        // config.getServletContext().setInitParameter("paramContext", "paramContext");
 
-        // Recuperamos el parámetro de inicialización del contexto de la aplicación con el nombre "prueba"
-        paramContext = config.getServletContext().getInitParameter("prueba");
         
-        // Establecemos un atributo en el contexto de la aplicación con el nombre "attribContext" y el valor "ATRIBUTO DE DAM"
-        // A diferencia de los parámetros de inicialización, los atributos pueden ser creados y modificados en tiempo de ejecución
+        // Recuperamos el parámetro de inicialización del contexto de la etiqueta param-name
+        paramContext = config.getServletContext().getInitParameter("param");
+        
+        						 //SetAtribute se usa para almacenar un atributo
+// El primer parametro es el identificador del atributo, y el segundo es el valor que deseas asociar con esa clave
         config.getServletContext().setAttribute("attribContext", "ATRIBUTO DE DAM");
     }
 
@@ -54,6 +51,7 @@ public class Ejemplo07 extends HttpServlet {
         response.getWriter().append("<br>");
 
         // Escribimos en el cuerpo de la respuesta el valor del atributo del contexto "attribContext"
+        																		  //getAttribute, permite consultar el valor de un atributo que hayas guardado previamente en el contexto.	
         response.getWriter().append("Atributo del contexto: " + getServletContext().getAttribute("attribContext"));
     }
 }

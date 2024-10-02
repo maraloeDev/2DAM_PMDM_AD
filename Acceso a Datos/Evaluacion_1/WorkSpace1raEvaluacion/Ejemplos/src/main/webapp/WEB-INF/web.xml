@@ -10,7 +10,7 @@
   </welcome-file-list>
   
   <context-param>
-  <param-name>prueba</param-name>
+  <param-name>param</param-name>
   <param-value>DAM</param-value>
   </context-param>
 </web-app>
