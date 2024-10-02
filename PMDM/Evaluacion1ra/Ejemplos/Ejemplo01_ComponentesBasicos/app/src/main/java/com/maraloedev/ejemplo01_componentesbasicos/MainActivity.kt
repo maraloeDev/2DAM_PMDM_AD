@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             val estadoCivil: String =
                 findViewById<RadioButton>(binding.rgEstado.checkedRadioButtonId).text.toString()
             binding.tvMensaje.text =
-                "Hola ${binding.etNombre.text} $estadoCivil, color favorito: ${binding.spColoresGUI.selectedItem}"
+                "Hola ${binding.etNombre.text} el estado civil es $estadoCivil, y el color favorito: ${binding.spColoresGUI.selectedItem}"
 
             val nombreIntroducido: String = binding.etNombre.text.toString()
             listaNombres.add(nombreIntroducido)
