@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio05_OnTouchListener</string>
+    <string name="TextView_Nombre">Nombre:</string>
+    <string name="EditText_Nombre">Nombre</string>
+    <string name="EditText_Contrasena">Contraseña</string>
+    <string name="TextView_Contrasena">Contraseña</string>
+</resources>

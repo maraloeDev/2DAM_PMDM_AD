@@ -6,9 +6,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.maraloedev.ejercicio01_componentesbasicos.databinding.ActivityMainBinding
 
-lateinit var binding: ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -33,32 +33,44 @@ class MainActivity : AppCompatActivity() {
             binding.btnNueve
         )
 
-        // Recorre la lista entera con los números de listaNumeros.
+        /**
+         * Recorre la lista entera con los números de listaNumeros.
+          */
+
         for (nBotones in listaNumeros) {
             nBotones.setOnClickListener {
-                // Cuando se haga clic en el botón, tomará el número que tiene actualmente el resultado
+                /**
+                 * Cuando se haga clic en el cada boton,
+                 *      tomará el número que tiene actualmente el resultado
+                 */
                 if (resultado.text.contains("Operación no contemplada")) {
                     resultado.text = ""
                 }
 
                 resultado.text = "${resultado.text}${nBotones.text}"
             }
-
         }
 
         listaOperaciones = arrayListOf(binding.btnMas, binding.btnMenos)
 
-        // Recorre la lista entera con los botones de listaOperaciones.
+        /**
+         * Recorre la lista entera con los botones de listaOperaciones.
+         */
         for (nOperaciones in listaOperaciones) {
             nOperaciones.setOnClickListener {
-                // Cuando se haga clic en el botón de operación, tomará el número que tiene actualmente el resultado
+                /**
+                 * Cuando se haga clic en el botón de operación
+                 *      tomará el número que tiene actualmente el resultado
+                 */
                 n1 = resultado.text.toString().toIntOrNull() ?: 0
                 operador = nOperaciones.text.toString()
                 resultado.text = ""
 
             }
         }
-
+        /**
+         * Cuando le doy al boton igual, recupero el numero introducido anteriormente
+         */
         binding.btnIgual.setOnClickListener {
             n2 = resultado.text.toString().toIntOrNull() ?: 0
 
@@ -68,7 +80,9 @@ class MainActivity : AppCompatActivity() {
                 else -> resultado.text = "Operación no contemplada"
             }
         }
-
+        /**
+         * Cuando le doy al boton de limpiar, limpio los datos guardados
+         */
         binding.btnLimpiar.setOnClickListener {
             operador = ""
             n1 = 0

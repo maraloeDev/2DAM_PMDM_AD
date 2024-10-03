@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ejercicio03_Spinner_ListView</string>
+    <string name="PlaceHolder_dato">Inserte un dato</string>
+    <string name="Button_Anadir">AÑADIR</string>
+    <string name="Button_Borrar">BORRAR</string>
+</resources>

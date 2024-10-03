@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_Nombre_Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/PlaceHoderNumbre_Usuario"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/rg_Estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_Soltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButton_Soltero" />
+
+        <RadioButton
+            android:id="@+id/rb_Casado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButton_Casado" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/sp_ComunidadAutonoma"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/Spinner_ComunidadesAutonomas" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_Futbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox_Futbol" />
+
+        <CheckBox
+            android:id="@+id/cb_Baloncesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox_Baloncesto" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_Tenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox_Tenis" />
+
+    <Button
+        android:id="@+id/b_Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Guardar" />
+</LinearLayout>

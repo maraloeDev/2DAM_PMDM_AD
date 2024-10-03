@@ -24,6 +24,4 @@ class persona (var nombre:String) : SerHumano(), Atleta {
     override fun correr() {
         Log.d("Depurando", "Corriendo")
     }
-
-
 }
