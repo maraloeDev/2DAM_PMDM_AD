@@ -3,4 +3,5 @@
     <string name="PlaceHolder_IntroduceUnNombre">Introduce un nombre</string>
     <string name="PlaceHolder_Contrasena">Introduce una contraseña</string>
     <string name="bGuardar">Guardar</string>
+    <string name="PlaceHolder_IntroduceUnaEdad">Introduce una edad</string>
 </resources>

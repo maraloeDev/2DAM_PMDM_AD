@@ -8,12 +8,14 @@ class persona (var nombre:String) : SerHumano(), Atleta {
     var contrasena =""
     var edad:Int? = null
 
+    constructor() : this("","")
+
     constructor(nombre: String, contrasena:String):this(nombre) {
         this.contrasena = contrasena
 
     }
 
-    constructor(nombre: String, contrasena:String, edad:Int):this(nombre, contrasena) {
+    constructor(nombre: String, contrasena:String, edad: Int?):this(nombre, contrasena) {
         this.edad = edad
     }
 

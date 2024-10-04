@@ -27,10 +27,12 @@ class MainActivity : AppCompatActivity() {
         binding.lvListaPersonas.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, datos)
 
         binding.button.setOnClickListener {
-            val usuario = persona(binding.HintName.text.toString(), binding.HintPassword.text.toString())
+            val usuario = persona(binding.HintName.text.toString(), binding.HintPassword.text.toString(),binding.HintEdad.text.toString().toInt())
 
             Log.d("depurando", usuario.toString())
 
+var personaVacia:persona = persona()
+            binding.usuario = personaVacia
             (binding.lvListaPersonas.adapter as ArrayAdapter<persona>).add(usuario)
         }
     }

@@ -50,9 +50,9 @@ class MainActivity : AppCompatActivity() {
                     tipoDeporte += "${tiposDeporte.text}"
                 }
             }
-
+    val p1 = Usuario(nombre_Usuario.text.toString())
             Log.d(
-                "DATOS_USUARIO", "El nombre es ${nombre_Usuario.text}" +
+                "DATOS_USUARIO", "El nombre es ${p1.nombre}" +
                         "\n" +
                         "El estado es $valorRadioButton" +
                         "\n" +
