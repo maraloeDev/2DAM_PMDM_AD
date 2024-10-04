@@ -11,43 +11,9 @@
     <servlet-name>Ejercicio01</servlet-name>
     <url-pattern>/Ejercicio01</url-pattern>
   </servlet-mapping>
+  
   <context-param>
-    <param-name>color</param-name>
-    <param-value>White
-  </param-value>
+  <param-name>color</param-name>
+  <param-value>white</param-value>
   </context-param>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio01_Context</display-name>
-    <servlet-name>Ejercicio01_Context</servlet-name>
-    <servlet-class>ejercicios.Ejercicio01_Context</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio01_Context</servlet-name>
-    <url-pattern>/Ejercicio01_Context</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio02</display-name>
-    <servlet-name>Ejercicio02</servlet-name>
-    <servlet-class>ejercicios.Ejercicio02</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio02</servlet-name>
-    <url-pattern>/Ejercicio02</url-pattern>
-  </servlet-mapping>
-  <context-param>
-    <param-name>listaPersonas</param-name>
-    <param-value></param-value>
-  </context-param>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio02_Contexto</display-name>
-    <servlet-name>Ejercicio02_Contexto</servlet-name>
-    <servlet-class>ejercicios.Ejercicio02_Contexto</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio02_Contexto</servlet-name>
-    <url-pattern>/Ejercicio02_Contexto</url-pattern>
-  </servlet-mapping>
 </web-app>
