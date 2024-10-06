@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Ejemplo02_TrabajandoConClases</string>
-    <string name="PlaceHolder_IntroduceUnNombre">Introduce un nombre</string>
+    <string name="PlaceHolder_Nombre">Introduce un nombre</string>
     <string name="PlaceHolder_Contrasena">Introduce una contraseña</string>
-    <string name="bGuardar">Guardar</string>
-    <string name="PlaceHolder_IntroduceUnaEdad">Introduce una edad</string>
+    <string name="PlaceHoder_Edad">Introduce una edad</string>
+    <string name="Button_Guardar">Guardar</string>
 </resources>

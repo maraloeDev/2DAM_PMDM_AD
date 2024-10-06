@@ -67,5 +67,11 @@ class MainActivity : AppCompatActivity() {
                 dato.setText("")
             }
         }
+
+        binding.lvDatos.setOnItemClickListener { adapterView, view, i, l ->
+            listaDatos.removeAt(listaDatos.size - 1)
+            adapter.notifyDataSetChanged()
+            dato.setText("")
+        }
     }
 }

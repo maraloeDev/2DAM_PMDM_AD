@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <variable
-            name="usuario"
-            type="com.maraloedev.ejemplo02_trabajandoconclases.persona" />
+<variable
+    name="usuario"
+    type="com.maraloedev.ejemplo02_trabajandoconclases.persona" />
     </data>
 
     <LinearLayout
@@ -19,47 +18,49 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/HintName"
+                android:id="@+id/til_Nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/PlaceHolder_IntroduceUnNombre"
-                android:text="@{usuario.nombre}" />
+                android:hint="@string/PlaceHolder_Nombre"
+                android:text="@{usuario.nombre}"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp">
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/HintPassword"
+                android:id="@+id/til_Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/PlaceHolder_Contrasena"
-                android:text="@{usuario.contrasena}" />
+                android:text="@{usuario.contrasena}"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/HintEdad"
+                android:id="@+id/til_Edad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/PlaceHolder_IntroduceUnaEdad"
-                android:text="@{String.valueOf(usuario.edad)}" />
+                android:hint="@string/PlaceHoder_Edad"
+                android:text="@{String.valueOf(usuario.edad)}"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/b_Guardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/bGuardar" />
+            android:text="@string/Button_Guardar" />
 
         <ListView
             android:id="@+id/lv_ListaPersonas"
