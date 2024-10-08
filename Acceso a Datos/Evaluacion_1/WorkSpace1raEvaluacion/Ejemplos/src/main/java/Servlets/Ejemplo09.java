@@ -1,7 +1,6 @@
 package Servlets;
 
 import java.io.IOException;
-import jakarta.*;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
