@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio03</title>
+</head>
+<body>
+
+    <h2><strong>Recogida de datos</strong></h2>
+
+    <form action="Ejercicio03" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" required="required"><br><br>
+
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" required="required"><br><br>
+
+        <label for="direccion">Dirección</label><br>
+        <textarea id="direccion" name="direccion" rows="4" cols="40" required="required">
+        </textarea><br><br>
+
+        <label>Tipo de tarjeta:</label><br>
+        <input type="radio" id="visa" name="tipo_tarjeta" value="visa" required="required">
+        <label for="visa">Visa</label><br>
+
+        <input type="radio" id="mastercard" name="tipo_tarjeta" value="mastercard" required="required">
+        <label for="mastercard">Master Card</label><br>
+
+        <input type="radio" id="amex" name="tipo_tarjeta" value="amex" required="required">
+        <label for="amex">American Express</label><br><br>
+
+        <label for="num_tarjeta">Número de tarjeta de crédito</label><br>
+        <input type="text" id="num_tarjeta" name="num_tarjeta" required="required"><br><br>
+
+        <input type="submit">Enviar</input>
+        <input type="reset">Borrar</input>
+    </form>
+
+</body>
+</html>

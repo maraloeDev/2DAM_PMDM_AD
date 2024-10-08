@@ -2,13 +2,10 @@ package Servlets;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import jakarta.servlet.http.HttpSessionIdListener;
-
 import java.io.IOException;
 import java.util.Date;
 
@@ -41,23 +38,21 @@ public class Ejemplo08 extends HttpServlet {
 		
 		int c = 1;
 		
-		//Creo la sesion
+		//Creo la sesion si no existe
 		HttpSession session = request.getSession(true);
 		
 		if (session.getAttribute("cont") == null) {
+			response.getWriter().append("Hola DAM \n");	
+			//Reescritura de la URL si el navegador no acepta cookies
+			//response.sendRedirect(response.encodeRedirectURL("Ejemplo08"));
 			
-			response.getWriter().append("Hola DAM \n");		
-			
-		} else {
+		} else { // Recoge de la sesion el valor del contador
 			response.getWriter().append("Hola de nuevo DAMM \n");
 			c = (int) session.getAttribute("cont");
 			
 		}
 		
-		
-		//Reenviar la url concatenandole el jsesion id, en caso de que el navegador no acepte cookies, el jsesion va aqui
-				//response.sendRedirect(response.encodeRedirectURL("Ejemplo08"));
-		
+		//Incrementa el contador guardandolo en la sesion
 			session.setAttribute("cont", c+1);
 			response.getWriter().append("Accesos de sesion " + c + "\n");
 			response.getWriter().append("La sesion fue creada el " + new Date(session.getCreationTime() )+"\n");

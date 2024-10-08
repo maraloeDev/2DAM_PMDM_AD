@@ -27,5 +27,4 @@ public class Ejemplo01 extends HttpServlet {
 		
 		response.getWriter().append("Hola Mundo");
 	}
-
 }
