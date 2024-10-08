@@ -7,6 +7,7 @@
     <string name="CheckBox_Baloncesto">Baloncesto</string>
     <string name="CheckBox_Tenis">Tenis</string>
     <string name="Button_Guardar">Guardar</string>
+    <string name="PlaceHolder_Edad">Introduce una edad</string>
     <string-array name="Spinner_ComunidadesAutonomas">
         <item><b>Valladolid</b></item>
         <item><b>León</b></item>

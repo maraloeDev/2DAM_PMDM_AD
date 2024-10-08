@@ -6,7 +6,7 @@
     <data>
 <variable
     name="usuario"
-    type="com.maraloedev.ejemplo02_trabajandoconclases.persona" />
+    type="com.maraloedev.ejemplo02_trabajandoconclases.Persona" />
     </data>
 
     <LinearLayout
@@ -18,7 +18,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -26,13 +26,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/PlaceHolder_Nombre"
-                android:text="@{usuario.nombre}"
-                />
+                android:text="@{usuario.nombre}" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -40,12 +39,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/PlaceHolder_Contrasena"
-                android:text="@{usuario.contrasena}"/>
+                android:text="@{usuario.contrasena}" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -53,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/PlaceHoder_Edad"
-                android:text="@{String.valueOf(usuario.edad)}"/>
+                android:text="@{String.valueOf(usuario.edad)}" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

@@ -2,7 +2,7 @@ package com.maraloedev.ejemplo02_trabajandoconclases
 
 import android.util.Log
 
-class persona (var nombre:String) : SerHumano(), Atleta {
+class Persona (var nombre:String) : SerHumano(), Atleta {
 
         var contrasena =""
         var edad:Int? = null
