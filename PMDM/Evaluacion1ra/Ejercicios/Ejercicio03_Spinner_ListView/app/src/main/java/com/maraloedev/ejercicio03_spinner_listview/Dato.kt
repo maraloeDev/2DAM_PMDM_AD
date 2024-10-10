@@ -1,3 +1,9 @@
 package com.maraloedev.ejercicio03_spinner_listview
 
-data class Dato()
+class Dato (val dato:String) {
+
+    override fun toString(): String {
+        return dato
+    }
+}
+
