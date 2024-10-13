@@ -28,6 +28,7 @@ public class Ejercicio02_Context extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
+		listaPersonas = (ArrayList<Persona>) getServletContext().getAttribute("listadoPersonas");
 	}
 
 	/**

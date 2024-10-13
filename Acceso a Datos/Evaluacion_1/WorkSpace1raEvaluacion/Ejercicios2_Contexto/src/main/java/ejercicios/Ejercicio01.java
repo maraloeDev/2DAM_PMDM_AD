@@ -53,21 +53,13 @@ public class Ejercicio01 extends HttpServlet {
 		}
 		
 		response.setContentType("text/html");
-		response.getWriter()
-				.append("<!DOCTYPE html>\\r\\n\" + \"<html>\\r\\n\" +\r\n"
-						+ "\"\r\n"
-						+ "\r\n"
-						+ "<head>\\r\\n\" + \"\r\n"
-						+ "    <meta charset=\\\"UTF-8\\\">\\r\\n\"\r\n"
-						+ "    + \" <title>EJERCICIO 01</title>\\r\\n\" + \"\r\n"
-						+ "</head>\\r\\n\"\r\n"
-						+ "+ \"\r\n"
-						+ "\r\n"
-						+ "<body style=\\\"background-color: \" + color + \" ;\\\">\\r\\n\"\r\n"
-						+ "    + \"<form action='Ejercicio01_Context' method='get'>\\r\\n\"\r\n"
-						+ "        + \" <input type='submit' value='Enviar'>\\r\\n\" + \" </form>\\r\\n\"\r\n"
-						+ "    + \" </body>\\r\\n\" + \"\r\n"
-						+ "\r\n"
-						+ "</html>");
+		response.getWriter().append("<html>\r\n"
+				+ "    <head>\r\n"
+				+ "        <title>Ejercicio01</title>\r\n"
+				+ "    </head>\r\n"
+				+ "    <body style=\"background-color: "+ color+";\">\r\n"
+				+ "        \r\n"
+				+ "    </body>\r\n"
+				+ "</html>");
 	}
 }
