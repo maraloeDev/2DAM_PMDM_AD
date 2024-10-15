@@ -58,15 +58,12 @@ public class Ejercicio06 extends HttpServlet {
 			response.getWriter().append("No hay galletas disponibles.");
 			response.getWriter().append("<a href=\"Ejercicio06\">Volver</a>");
 		} else {
-
-			response.getWriter()
-					.append("<html>\r\n" + "    <head>\r\n" + "        <body>\r\n"
-							+ "            <table border=\"2\">\r\n" + "                <tr>\r\n"
-							+ "                    <td>NOMBRE DE LA GALLETA</td>\r\n" + "                </tr>");
 			for (Cookie buscarCookie : cs) {
 
 				if (!buscarCookie.getName().contains("JSESSIONID")) {
-					response.getWriter().append("<tr>\r\n" + "<td>" + buscarCookie.getName() + "</td>\r\n");
+					response.getWriter().append(" <ul>\r\n"
+							+ "            <li>"+buscarCookie.getName()+"</li>\r\n"
+							+ "        </ul>");
 				}
 			}
 			response.getWriter().append("</table>" + "</body></head></html>");
@@ -82,6 +79,7 @@ public class Ejercicio06 extends HttpServlet {
 			throws ServletException, IOException {
 		Cookie c = new Cookie(request.getParameter("galleta"), request.getParameter("opciones"));
 		response.addCookie(c);
+		response.getWriter().append("La galleta se a cocinado");
 	}
 
 	/**
@@ -100,6 +98,7 @@ public class Ejercicio06 extends HttpServlet {
 				response.addCookie(cookieEliminada);
 			}
 		}
+		response.getWriter().append("La galleta se a comido");
 	}
 
 	private static void menu(HttpServletResponse response, HttpServletRequest request)

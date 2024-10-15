@@ -26,7 +26,7 @@ public class Ejercicio02 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
+		
 		
 		if (request.getParameter("nombre") != null) {
 			String nombre = request.getParameter("nombre");
