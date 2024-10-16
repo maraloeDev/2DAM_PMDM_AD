@@ -38,7 +38,7 @@ public class Ejemplo_10 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setContentType("text/html");
 	    response.getWriter().append("<html><body>")
-	        .append("<form name='formulario' action='Ejemplo_10' method='POST'>")
+	        .append("<form name='formulario' action='Ejemplo_10' method='post'>")
 	        .append("<input type='submit' name='metodo' value='include'  />")
 	        .append("<input type='submit' name='metodo' value='forward' />")
 	        .append("</form></body></html>");
