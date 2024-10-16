@@ -11,13 +11,13 @@ import java.util.Enumeration;
 /**
  * Servlet implementation class Ejemplo06
  */
-public class Ejemplo06 extends HttpServlet {
+public class Ejemplo_06 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ejemplo06() {
+    public Ejemplo_06() {
         super();
         // TODO Auto-generated constructor stub
     }

@@ -9,16 +9,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class Ejemplo7b
+ * Servlet implementation class Ejemplo010_bis
  */
-@WebServlet("/Ejemplo07_bis")
-public class  Ejemplo07_bis extends HttpServlet {
+@WebServlet("/Ejemplo_10_bis")
+public class Ejemplo_10_bis extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public  Ejemplo07_bis() {
+    public Ejemplo_10_bis() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,7 +28,6 @@ public class  Ejemplo07_bis extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
-		super.init(config);
 	}
 
 	/**
@@ -36,7 +35,21 @@ public class  Ejemplo07_bis extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Parametro de inicializacion: ").append(getServletContext().getInitParameter("prueba"));
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        response.getWriter().append("<html><body>")
+            .append("<p>Inicio del dispatcher</p>")
+            .append("<h1>HOLA DESPACHADOR</h1>")
+            .append((String) request.getAttribute("attribDitpach"))
+            .append("<p>Fin de dispatcher</p>")
+            .append("</body></html>");
+        // out.close();
+    }
 
 }

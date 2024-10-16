@@ -12,14 +12,14 @@ import java.io.IOException;
  * Servlet implementation class Ejemplo7
  */
 @WebServlet("/Ejemplo07")
-public class Ejemplo07 extends HttpServlet {
+public class Ejemplo_07 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String paramContext="";
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ejemplo07() {
+    public Ejemplo_07() {
         super();
         // TODO Auto-generated constructor stub
     }

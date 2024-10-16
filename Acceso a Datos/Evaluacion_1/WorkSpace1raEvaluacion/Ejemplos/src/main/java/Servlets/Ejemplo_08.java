@@ -12,13 +12,13 @@ import java.util.Date;
 /**
  * Servlet implementation class Ejemplo08
  */
-public class Ejemplo08 extends HttpServlet {
+public class Ejemplo_08 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ejemplo08() {
+    public Ejemplo_08() {
         super();
         // TODO Auto-generated constructor stub
     }
