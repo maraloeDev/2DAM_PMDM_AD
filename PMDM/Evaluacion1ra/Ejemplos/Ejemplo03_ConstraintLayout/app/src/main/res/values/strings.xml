@@ -1,7 +1,3 @@
 <resources>
-    <string name="app_name">Ejemplo03_ConstraintLayout</string>
-    <string name="Button_MostrarUsuario">Mostrar Usuario</string>
-    <string name="TextInputEditText_inserte_apellido_1">Inserte Apellido 1</string>
-    <string name="TextInputEditText_inserte_apellido_2">Inserte Apellido 2</string>
-    <string name="TextInputEditText_inserte_nombre">Inserte Nombre</string>
+    <string name="app_name">Ejem03_ConstraintLayout</string>
 </resources>

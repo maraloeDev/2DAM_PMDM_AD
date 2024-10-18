@@ -79,6 +79,7 @@ public class Ejercicio01 extends HttpServlet {
 				
 			case "Ticket" :
 				response.getWriter().append("El precio de las letras introducidas son " + precio);
+				return;
 	}
 			
 			//Establezco el valor del atributo al precio
