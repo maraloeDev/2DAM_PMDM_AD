@@ -38,11 +38,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
         
         // Configurar la respuesta
         response.setContentType("text/html");
-        
-        // Mostrar el formulario solo si no hay parámetros de entrada
-        String clave = request.getParameter("clave");
 
-        if (clave == null) { // Si no hay parámetros, mostrar el formulario
             response.getWriter().append("<!DOCTYPE html>\r\n"
                     + "<html lang=\"es\">\r\n"
                     + "<head>\r\n"
@@ -52,7 +48,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
                     + "</head>\r\n"
                     + "<body>\r\n"
                     + "    <h1>Página de Acceso</h1>\r\n"
-                    + "    <form action=\"Ejercicio01_ServletDespachador\" method=\"get\">\r\n"
+                    + "    <form action=\"Ejercicio01_ServletDespachador\" method=\"post\">\r\n"
                     + "        <table>\r\n"
                     + "            <tr>\r\n"
                     + "                <td><label for=\"usuario\">Usuario</label></td>\r\n"
@@ -71,7 +67,14 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
                     + "    </form>\r\n"
                     + "</body>\r\n"
                     + "</html>\r\n");
-        } else {
+    }
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String clave = request.getParameter("clave");
             if (clave.equalsIgnoreCase("admin")) {
             	
             	String usuario = request.getParameter("usuario");
@@ -84,15 +87,6 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
                 otroServlet.forward(request, response);
             }
         }
-    }
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		
 		
 	}
-
-}

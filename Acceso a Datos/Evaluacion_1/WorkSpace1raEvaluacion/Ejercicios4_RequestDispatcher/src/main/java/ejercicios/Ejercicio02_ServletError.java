@@ -11,6 +11,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class Ejercicio02_ServletError
  */
+@WebServlet("/Ejercicio02_ServletError")
 public class Ejercicio02_ServletError extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

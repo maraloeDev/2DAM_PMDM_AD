@@ -9,44 +9,4 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio02_ServletDespachador</display-name>
-    <servlet-name>Ejercicio02_ServletDespachador</servlet-name>
-    <servlet-class>ejercicios.Ejercicio02_ServletDespachador</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio02_ServletDespachador</servlet-name>
-    <url-pattern>/Ejercicio02_ServletDespachador</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio01_ServletError</display-name>
-    <servlet-name>Ejercicio01_ServletError</servlet-name>
-    <servlet-class>ejercicios.Ejercicio01_ServletError</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio01_ServletError</servlet-name>
-    <url-pattern>/Ejercicio01_ServletError</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio02_ServletError</display-name>
-    <servlet-name>Ejercicio02_ServletError</servlet-name>
-    <servlet-class>ejercicios.Ejercicio02_ServletError</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio02_ServletError</servlet-name>
-    <url-pattern>/Ejercicio02_ServletError</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Ejercicio02_ServletTablas</display-name>
-    <servlet-name>Ejercicio02_ServletTablas</servlet-name>
-    <servlet-class>ejercicios.Ejercicio02_ServletTablas</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Ejercicio02_ServletTablas</servlet-name>
-    <url-pattern>/Ejercicio02_ServletTablas</url-pattern>
-  </servlet-mapping>
 </web-app>
