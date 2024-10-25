@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ExamenAndroid1</string>
+    <string name="TextView_InserteNombre">Inserte Nombre:</string>
+    <string name="Hint_Name">Name</string>
+    <string name="TextView_InserteCalificacion">Inserte Calificación</string>
+    <string name="Button_Guardar">Guardar</string>
+    <string name="TextView_nSuspensos" />
+    <string-array name="Spinner_Calificaciones">
+        <item>Suspenso</item>
+        <item>Aprobado</item>
+        <item>Sobresaliente</item>
+    </string-array>
+
+    <plurals name="alumnosSuspensos">
+        <item quantity="one">%d Suspenso</item>
+        <item quantity="other">%d Suspensos</item>
+    </plurals>
 </resources>
