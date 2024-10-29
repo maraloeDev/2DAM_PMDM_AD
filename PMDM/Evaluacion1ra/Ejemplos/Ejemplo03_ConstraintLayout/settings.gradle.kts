@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ejem03_ConstraintLayout"
+rootProject.name = "Ejemplo03_ConstraintLayout"
 include(":app")
- 

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="user"
-            type="com.example.ejem03_constraintlayout.Usuario" />
+            type="com.maraloedev.ejemplo03_constraintlayout.Usuario" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

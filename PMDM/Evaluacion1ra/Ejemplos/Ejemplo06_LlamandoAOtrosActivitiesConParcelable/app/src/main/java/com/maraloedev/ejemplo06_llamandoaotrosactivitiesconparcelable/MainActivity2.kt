@@ -5,16 +5,26 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.maraloedev.ejemplo06_llamandoaotrosactivitiesconparcelable.databinding.ActivityMainBinding
 
 class MainActivity2 : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.tvDatoPasado.text = this.intent.getStringExtra("dato").toString()
+
+        binding.bIrAlSegundoActivity.setOnClickListener {
+
+            var datoADevolver = binding.tietMandarDato.text.toString()
+            setResult(RESULT_OK, intent.putExtra(datoADevolver, datoADevolver))
+            finish()
         }
+
+
+
     }
 }

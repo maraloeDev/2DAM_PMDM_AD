@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="88dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.4dp"
+            android:layout_marginStart="0.6dp"
+            android:layout_weight="0.6"
+            android:text="@string/TextView_Nombre" />
+
+        <EditText
+            android:id="@+id/et_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_weight="0.6"
+            android:ems="10"
+            android:hint="@string/Hint_Nombre"
+            android:inputType="text"
+            android:textColorHint="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tb_OnOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ToggleButton_OnOff" />
+
+        <TextView
+            android:id="@+id/tv_Edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/TextView_Edad"
+            android:textAlignment="viewStart"
+            android:textDirection="locale" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:textAlignment="textEnd">
+
+            <EditText
+                android:id="@+id/et_Edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_weight="0.6"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/Hint_Edad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_Ciudad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="@string/TextView_Cuidad" />
+
+                <Spinner
+                    android:id="@+id/spCiudades"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:entries="@array/sp_Ciudades" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_Grabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Button_Grabar" />
+
+    <TextView
+        android:id="@+id/tv_Borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00DDFF"
+        android:gravity="center_horizontal"
+        android:text="@string/TextView_Borrar"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lv_DatosUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="193dp" />
+
+</LinearLayout>

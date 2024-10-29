@@ -3,18 +3,28 @@ package com.maraloedev.ejemplo05_llamandoaotrosactivities
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.maraloedev.ejemplo05_llamandoaotrosactivities.databinding.Activity2Binding
 
 class Activity2 : AppCompatActivity() {
+
+    lateinit var binding: Activity2Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        // Inflar el diseño y configurar el binding
+        binding = Activity2Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        // Mostrar el dato recibido de MainActivity
+        binding.tvDatoPasado.text = this.intent.getStringExtra("dato").toString()
+
+        // Configurar el botón para devolver el dato a MainActivity
+        binding.bVolverActivity1.setOnClickListener {
+            val datoARetornar: String = binding.tietDatoARetornar.text.toString()
+            setResult(RESULT_OK, intent.putExtra("datoARetornar", datoARetornar))
+            finish() // Finalizar la actividad y devolver el resultado
         }
     }
 }

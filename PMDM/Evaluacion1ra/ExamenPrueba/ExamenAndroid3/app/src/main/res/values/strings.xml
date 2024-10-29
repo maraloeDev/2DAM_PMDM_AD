@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ExamenAndroid3</string>
+    <string name="Hint_Nombre">Nombre</string>
+    <string name="TextView_Nombre">Nombre</string>
+    <string name="TextView_Edad">Edad</string>
+    <string name="Hint_Edad">Edad</string>
+    <string name="TextView_Ciudad">Ciudad</string>
+    <string name="Button_Grabar">Grabar</string>
+    <string name="TextView_Cuidad">Cuidad</string>
+    <string name="ToggleButton_OnOff">OFF</string>
+    <string name="TextView_Borrar">Borrar</string>
+    <string-array name="sp_Ciudades">
+        <item>Madrid</item>
+        <item>Barcelona</item>
+        <item>Valencia</item>
+        <item>Sevilla</item>
+        <item>Zaragoza</item>
+        <item>Móstoles</item>
+    </string-array>
+</resources>
