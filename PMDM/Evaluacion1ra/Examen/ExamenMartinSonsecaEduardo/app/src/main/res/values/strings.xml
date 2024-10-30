@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">ExamenZumos</string>
+    <string name="app_name">ExamenMartinSonsecaEduardo</string>
+    <string name="TextInputEditText_Login">Login</string>
+    <string name="TextInputEditText_Contrasena">Password</string>
+    <string name="Button_Login">Login</string>
+    <string name="b_Naranja">Naranja</string>
+    <string name="Button_Pina">Piña</string>
+    <string name="Button_Fresa">Fresa</string>
+    <string name="Button_Melocoton">Melocoton</string>
+    <string name="Button_Finalizar">Finalizar</string>
+
+
+    <plurals name="precioZumos">
+        <item quantity="one">%d euro</item>
+        <item quantity="other">%d euros</item>
+    </plurals>
 </resources>

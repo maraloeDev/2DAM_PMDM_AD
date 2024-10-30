@@ -92,42 +92,52 @@
     <url-pattern>/Ejemplo011</url-pattern>
   </servlet-mapping>
   <listener>
-    <listener-class>Servlets.ListenerContext</listener-class>
+    <listener-class>listeners.listenerContext2</listener-class>
   </listener>
   <context-param>
-    <param-name>datos</param-name>
-    <param-value>valor1</param-value>
+    <param-name>bbdd</param-name>
+    <param-value>datos</param-value>
   </context-param>
   <listener>
-    <listener-class>Servlets.ListenerSession</listener-class>
+    <listener-class>listeners.listenerSession</listener-class>
   </listener>
   <servlet>
     <description></description>
-    <display-name>Ejemplo012</display-name>
-    <servlet-name>Ejemplo012</servlet-name>
-    <servlet-class>Servlets.Ejemplo012</servlet-class>
+    <display-name>Ejermplo013</display-name>
+    <servlet-name>Ejermplo013</servlet-name>
+    <servlet-class>Servlets.Ejermplo013</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Ejemplo012</servlet-name>
-    <url-pattern>/Ejemplo012</url-pattern>
+    <servlet-name>Ejermplo013</servlet-name>
+    <url-pattern>/Ejermplo013</url-pattern>
   </servlet-mapping>
   <filter>
-    <display-name>EjemploFilter</display-name>
-    <filter-name>EjemploFilter</filter-name>
-    <filter-class>Servlets.EjemploFilter</filter-class>
+    <display-name>EFilter</display-name>
+    <filter-name>EFilter</filter-name>
+    <filter-class>filters.EFilter</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>EjemploFilter</filter-name>
-    <url-pattern>/EjemploFilter</url-pattern>
+    <filter-name>EFilter</filter-name>
+    <url-pattern>/EFilter</url-pattern>
   </filter-mapping>
   <servlet>
     <description></description>
-    <display-name>Ejemplo014</display-name>
-    <servlet-name>Ejemplo014</servlet-name>
-    <servlet-class>Servlets.Ejemplo014</servlet-class>
+    <display-name>Ejercicio014</display-name>
+    <servlet-name>Ejercicio014</servlet-name>
+    <servlet-class>Servlets.Ejercicio014</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Ejemplo014</servlet-name>
-    <url-pattern>/Ejemplo014</url-pattern>
+    <servlet-name>Ejercicio014</servlet-name>
+    <url-pattern>/Ejercicio014</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejemplo014b</display-name>
+    <servlet-name>Ejemplo014b</servlet-name>
+    <servlet-class>Servlets.Ejemplo014b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejemplo014b</servlet-name>
+    <url-pattern>/Ejemplo014b</url-pattern>
   </servlet-mapping>
 </web-app>
