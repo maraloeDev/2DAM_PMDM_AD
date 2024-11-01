@@ -1,6 +1,7 @@
 package com.example.examenzumos
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -45,11 +46,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.bEntrar.setOnClickListener {
 
-            if (binding.tietNombreUsuario.equals(usuarioPredeterminado) || binding.tietNombreUsuario.equals(
+            if (binding.tietNombreUsuario.text.toString() != (usuarioPredeterminado) || binding.tietNombreUsuario.equals(
                     contrasenaPredeterminado
                 )
             ) {
                 Snackbar.make(binding.root, "EL USUARIO ESTA MAL", Snackbar.LENGTH_SHORT).show()
+
+                binding.tietNombreUsuario.setTextColor(Color.RED)
 
             } else {
                 binding.tietNombreUsuario.setText("")

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EleccionZumosActivity">
+
+    <Button
+        android:id="@+id/b_Naranja"
+        android:layout_width="148dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/b_Naranja"
+        app:icon="@drawable/ic_launcher_background"
+        app:iconTint="#FF9800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_Pina"
+        android:layout_width="168dp"
+        android:layout_height="224dp"
+        android:text="@string/Button_Pina"
+        app:icon="@android:color/holo_orange_light"
+        app:iconTint="#FFEB3B"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/b_Fresa"
+        android:layout_width="150dp"
+        android:layout_height="167dp"
+        android:text="@string/Button_Fresa"
+        app:icon="@drawable/ic_launcher_background"
+        app:iconTint="#E91E63"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/b_Melocoton"
+        android:layout_width="166dp"
+        android:layout_height="172dp"
+        android:text="@string/Button_Melocoton"
+        app:icon="@drawable/ic_launcher_background"
+        app:iconTint="#CDDC39"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/b_Finalizar"
+        android:layout_width="413dp"
+        android:layout_height="108dp"
+        android:text="@string/Button_Finalizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

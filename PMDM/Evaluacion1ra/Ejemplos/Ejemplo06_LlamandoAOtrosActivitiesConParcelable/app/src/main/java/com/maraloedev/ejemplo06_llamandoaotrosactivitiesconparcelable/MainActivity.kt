@@ -14,6 +14,7 @@ import com.maraloedev.ejemplo06_llamandoaotrosactivitiesconparcelable.databindin
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
