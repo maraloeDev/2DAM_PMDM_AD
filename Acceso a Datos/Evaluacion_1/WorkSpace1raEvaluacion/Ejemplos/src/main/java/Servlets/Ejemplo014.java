@@ -10,13 +10,13 @@ import java.io.IOException;
 /**
  * Servlet implementation class Ejercicio014
  */
-public class Ejercicio014 extends HttpServlet {
+public class Ejemplo014 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ejercicio014() {
+    public Ejemplo014() {
         super();
         // TODO Auto-generated constructor stub
     }

@@ -122,13 +122,13 @@
   </filter-mapping>
   <servlet>
     <description></description>
-    <display-name>Ejercicio014</display-name>
-    <servlet-name>Ejercicio014</servlet-name>
-    <servlet-class>Servlets.Ejercicio014</servlet-class>
+    <display-name>Ejemplo014</display-name>
+    <servlet-name>Ejemplo014</servlet-name>
+    <servlet-class>Servlets.Ejemplo014</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Ejercicio014</servlet-name>
-    <url-pattern>/Ejercicio014</url-pattern>
+    <servlet-name>Ejemplo014</servlet-name>
+    <url-pattern>/Ejemplo014</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

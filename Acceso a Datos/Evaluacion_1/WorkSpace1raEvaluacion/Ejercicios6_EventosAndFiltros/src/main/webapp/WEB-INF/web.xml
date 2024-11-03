@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio01</display-name>
+    <servlet-name>Ejercicio01</servlet-name>
+    <servlet-class>ejercicios.Ejercicio01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio01</servlet-name>
+    <url-pattern>/Ejercicio01</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>notificaciones</param-name>
+    <param-value>0</param-value>
+  </context-param>
+  <listener>
+    <listener-class>listeners.ListenerEjercicio01</listener-class>
+  </listener>
+  <filter>
+    <display-name>FilterEjercicio02</display-name>
+    <filter-name>FilterEjercicio02</filter-name>
+    <filter-class>filters.FilterEjercicio02</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FilterEjercicio02</filter-name>
+    <url-pattern>/FilterEjercicio02</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio02</display-name>
+    <servlet-name>Ejercicio02</servlet-name>
+    <servlet-class>ejercicios.Ejercicio02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio02</servlet-name>
+    <url-pattern>/Ejercicio02</url-pattern>
+  </servlet-mapping>
+</web-app>
