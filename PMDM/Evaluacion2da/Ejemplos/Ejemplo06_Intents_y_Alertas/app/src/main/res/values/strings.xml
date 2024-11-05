@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejemplo06_Intents_y_Alertas</string>
+    <string name="Button_LanzarNavegador">Abrir navegador</string>
+    <string name="Button_EnviarCorreo">Enviar correo</string>
+    <string name="Button_Telefono">Llamar</string>
+    <string name="Button_LanzarGoogleMaps">Abrir Google Maps</string>
+    <string name="Button_Whatsapp">Whatsapp</string>
+    <string name="Button_Alertas">Alertas</string>
+    <string name="Button_dialogoMultiple">Dialogo multiple</string>
+    <string name="Button_DialogoSimple">Dialogo Simple</string>
+</resources>
