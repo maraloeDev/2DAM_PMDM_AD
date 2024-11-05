@@ -41,4 +41,38 @@
     <servlet-name>Ejercicio03_VerCompra</servlet-name>
     <url-pattern>/Ejercicio03_VerCompra</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio04</display-name>
+    <servlet-name>Ejercicio04</servlet-name>
+    <servlet-class>ejercicios.Ejercicio04</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio04</servlet-name>
+    <url-pattern>/Ejercicio04</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio05</display-name>
+    <servlet-name>Ejercicio05</servlet-name>
+    <servlet-class>ejercicios.Ejercicio05</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio05</servlet-name>
+    <url-pattern>/Ejercicio05</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>aleatorioContexto</param-name>
+    <param-value>5</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio06</display-name>
+    <servlet-name>Ejercicio06</servlet-name>
+    <servlet-class>ejercicios.Ejercicio06</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio06</servlet-name>
+    <url-pattern>/Ejercicio06</url-pattern>
+  </servlet-mapping>
 </web-app>
