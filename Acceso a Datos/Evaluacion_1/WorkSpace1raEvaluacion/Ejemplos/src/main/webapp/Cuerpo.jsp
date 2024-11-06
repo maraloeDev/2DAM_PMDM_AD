@@ -1,15 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="Error.jsp"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Pagina principal</title>
+<title>Insert title here</title>
 </head>
 <body>
 
-Numero: <%=Integer.parseInt(request.getParameter("numero")) %>
+<%for(int i = 0; i < 5; i++){
+	out.println("Hola DAMMM <br>");
+} %>
 
 </body>
 </html>

@@ -21,4 +21,24 @@
     <servlet-name>Ejercicio01b</servlet-name>
     <url-pattern>/Ejercicio01b</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio01c</display-name>
+    <servlet-name>Ejercicio01c</servlet-name>
+    <servlet-class>ejercicios.Ejercicio01c</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio01c</servlet-name>
+    <url-pattern>/Ejercicio01c</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Ejercicio02</display-name>
+    <servlet-name>Ejercicio02</servlet-name>
+    <servlet-class>ejercicios.Ejercicio02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejercicio02</servlet-name>
+    <url-pattern>/Ejercicio02</url-pattern>
+  </servlet-mapping>
 </web-app>

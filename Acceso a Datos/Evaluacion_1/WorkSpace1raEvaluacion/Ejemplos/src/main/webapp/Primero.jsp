@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="Error.jsp"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Pagina principal</title>
+<title>Insert title here</title>
 </head>
 <body>
-
-Numero: <%=Integer.parseInt(request.getParameter("numero")) %>
+<jsp:forward page="Segundo.jsp">
+<jsp:param name="arg3" value="33" />
+</jsp:forward>
 
 </body>
 </html>
