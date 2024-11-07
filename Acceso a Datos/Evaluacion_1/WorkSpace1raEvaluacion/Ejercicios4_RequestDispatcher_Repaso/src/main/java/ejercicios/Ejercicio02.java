@@ -1,5 +1,6 @@
 package ejercicios;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -17,76 +18,77 @@ public class Ejercicio02 extends HttpServlet {
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        response.getWriter().append("<!DOCTYPE html>\r\n")
-            .append("<html lang=\"es\">\r\n")
-            .append("<head>\r\n")
-            .append("    <meta charset=\"UTF-8\">\r\n")
-            .append("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n")
-            .append("    <title>Tablas de Multiplicar</title>\r\n")
-            .append("</head>\r\n")
-            .append("<body>\r\n")
-            .append("<form method=\"post\" action=\"Ejercicio02_ServletDespachador\">\r\n")
-            .append("    <table border=\"1\" style=\"width: 200px; text-align: center; background-color: lightblue;\">\r\n")
-            .append("        <thead>\r\n")
-            .append("            <tr>\r\n")
-            .append("                <th colspan=\"2\" style=\"background-color: blue; color: white; font-size: 18px;\">\r\n")
-            .append("                    Tablas de multiplicar\r\n")
-            .append("                </th>\r\n")
-            .append("            </tr>\r\n")
-            .append("        </thead>\r\n")
-            .append("        <tbody>\r\n")
-            .append("            <tr>\r\n")
-            .append("                <td colspan=\"2\" style=\"background-color: orange; font-weight: bold;\">\r\n")
-            .append("                    Numero: \r\n")
-            .append("                    <select name=\"tabla\" id=\"tabla\">\r\n")
-            .append("                        <option value=\"\">Elige una tabla</option>\r\n")
-            .append("                        <option value=\"1\">1</option>\r\n")
-            .append("                        <option value=\"2\">2</option>\r\n")
-            .append("                        <option value=\"3\">3</option>\r\n")
-            .append("                        <option value=\"4\">4</option>\r\n")
-            .append("                        <option value=\"5\">5</option>\r\n")
-            .append("                        <option value=\"6\">6</option>\r\n")
-            .append("                        <option value=\"7\">7</option>\r\n")
-            .append("                        <option value=\"8\">8</option>\r\n")
-            .append("                        <option value=\"9\">9</option>\r\n")
-            .append("                        <option value=\"10\">10</option>\r\n")
-            .append("                    </select>\r\n")
-            .append("                </td>\r\n")
-            .append("            </tr>\r\n")
-            .append("            <tr>\r\n")
-            .append("                <td colspan=\"2\">\r\n")
-            .append("                    Elige un color para la tabla\r\n")
-            .append("                </td>\r\n")
-            .append("            </tr>\r\n")
-            .append("            <tr>\r\n")
-            .append("                <td colspan=\"2\">\r\n")
-            .append("                    <input type=\"radio\" name=\"color\" value=\"black\" checked> Negro <br>\r\n")
-            .append("                    <input type=\"radio\" name=\"color\" value=\"red\"> Rojo <br>\r\n")
-            .append("                    <input type=\"radio\" name=\"color\" value=\"green\"> Verde <br>\r\n")
-            .append("                    <input type=\"radio\" name=\"color\" value=\"blue\"> Azul <br>\r\n")
-            .append("                    <input type=\"radio\" name=\"color\" value=\"orange\"> Naranja\r\n")
-            .append("                </td>\r\n")
-            .append("            </tr>\r\n")
-            .append("            <tr>\r\n")
-            .append("                <td colspan=\"2\">\r\n")
-            .append("                    <input type=\"submit\" value=\"Crear\">\r\n")
-            .append("                    <input type=\"reset\" value=\"Borrar\">\r\n")
-            .append("                </td>\r\n")
-            .append("            </tr>\r\n")
-            .append("        </tbody>\r\n")
-            .append("    </table>\r\n")
-            .append("</form>\r\n")
-            .append("</body>\r\n")
-            .append("</html>\r\n");
-    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.setContentType("text/html");
 
-    /**
-     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-     */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // For now, simply redirecting to doGet as a placeholder.
-        doGet(request, response);
-    }
-}
+		response.getWriter().append("<!DOCTYPE html>\r\n" + "<html lang=\"es\">\r\n" + "<head>\r\n"
+				+ "    <meta charset=\"UTF-8\">\r\n"
+				+ "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n"
+				+ "    <title>Tablas de Multiplicar</title>\r\n" + "</head>\r\n" + "<body>\r\n"
+				+ "<form method=\"post\" action=\"Ejercicio02\">\r\n"
+				+ "    <table border=\"1\" style=\"width: 200px; text-align: center; background-color: lightblue;\">\r\n"
+				+ "        <thead>\r\n" + "            <tr>\r\n"
+				+ "                <th colspan=\"2\" style=\"background-color: blue; color: white; font-size: 18px;\">\r\n"
+				+ "                    Tablas de multiplicar\r\n" + "                </th>\r\n"
+				+ "            </tr>\r\n" + "        </thead>\r\n" + "        <tbody>\r\n" + "            <tr>\r\n"
+				+ "                <td colspan=\"2\" style=\"background-color: orange; font-weight: bold;\">\r\n"
+				+ "                    Numero: \r\n" + "                    <select name=\"tabla\" id=\"tabla\">\r\n"
+				+ "                        <option value=\"\">Elige una tabla</option>\r\n"
+				+ "                        <option value=\"1\">1</option>\r\n"
+				+ "                        <option value=\"2\">2</option>\r\n"
+				+ "                        <option value=\"3\">3</option>\r\n"
+				+ "                        <option value=\"4\">4</option>\r\n"
+				+ "                        <option value=\"5\">5</option>\r\n"
+				+ "                        <option value=\"6\">6</option>\r\n"
+				+ "                        <option value=\"7\">7</option>\r\n"
+				+ "                        <option value=\"8\">8</option>\r\n"
+				+ "                        <option value=\"9\">9</option>\r\n"
+				+ "                        <option value=\"10\">10</option>\r\n" + "                    </select>\r\n"
+				+ "                </td>\r\n" + "            </tr>\r\n" + "            <tr>\r\n"
+				+ "                <td colspan=\"2\">\r\n" + "                    Elige un color para la tabla\r\n"
+				+ "                </td>\r\n" + "            </tr>\r\n" + "            <tr>\r\n"
+				+ "                <td colspan=\"2\">\r\n"
+				+ "                    <input type=\"radio\" name=\"color\" value=\"black\" checked> Negro <br>\r\n"
+				+ "                    <input type=\"radio\" name=\"color\" value=\"red\"> Rojo <br>\r\n"
+				+ "                    <input type=\"radio\" name=\"color\" value=\"green\"> Verde <br>\r\n"
+				+ "                    <input type=\"radio\" name=\"color\" value=\"blue\"> Azul <br>\r\n"
+				+ "                    <input type=\"radio\" name=\"color\" value=\"orange\"> Naranja\r\n"
+				+ "                </td>\r\n" + "            </tr>\r\n" + "            <tr>\r\n"
+				+ "                <td colspan=\"2\">\r\n"
+				+ "                    <input type=\"submit\" value=\"Crear\">\r\n"
+				+ "                    <input type=\"reset\" value=\"Borrar\">\r\n" + "                </td>\r\n"
+				+ "            </tr>\r\n" + "        </tbody>\r\n" + "    </table>\r\n" + "</form>\r\n" + "</body>\r\n"
+				+ "</html>\r\n");
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// Almaceno el colorElegido por el usuario y la tabla seleccionada
+					String colorElegido[] = request.getParameterValues("color");
+					String tablaElegida[] = request.getParameterValues("tabla");
+			
+			if(tablaElegida == null  || tablaElegida[0].isEmpty()) {
+				RequestDispatcher elDespachoMalo = request.getRequestDispatcher("Ejercicio02c");
+				getServletContext().setAttribute("mensajeError", "No has elegido ninguna tabla. Elige una tabla por favor");
+				elDespachoMalo.forward(request, response);
+			} else {
+				RequestDispatcher esteEsElBueno = request.getRequestDispatcher("Ejercicio02b");
+				
+				for(String laTabla : tablaElegida) {
+					getServletContext().setAttribute("ElNumero", laTabla);
+				}
+				
+				for(String color : colorElegido) {
+					getServletContext().setAttribute("colorTable", color);
+				}
+				
+				esteEsElBueno.forward(request, response);
+			}
+		}
+	}
