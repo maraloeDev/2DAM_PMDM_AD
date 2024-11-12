@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejemplo08_Fragments</string>
+    <string name="Button_Enviar">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">0</string>
+    <string name="Button_Contar">Contar</string>
+    <string name="Button_CargarFragments">Cargar Fragments</string>
+    <string name="Button_Frangment">Ir al Fragmment 2</string>
+    <string name="Button_ReemplazarFragments">Reemplazar Fragments</string>
+    <string name="TextView_HolaMundo2">Hola Mundo 2</string>
+</resources>

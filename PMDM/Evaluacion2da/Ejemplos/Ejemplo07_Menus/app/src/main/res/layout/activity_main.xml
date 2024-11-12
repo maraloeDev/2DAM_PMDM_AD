@@ -5,4 +5,12 @@
     android:id="@+id/linerLayout_Principal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/bPasarActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Button_Ir_Al_Segundo_Activity" />
+</LinearLayout>

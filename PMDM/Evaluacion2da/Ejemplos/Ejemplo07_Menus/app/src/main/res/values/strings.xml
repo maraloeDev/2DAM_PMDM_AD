@@ -3,4 +3,7 @@
     <string name="Item1">Opcion 1</string>
     <string name="Item2">Opcion 2</string>
     <string name="Item3">Opcion 3</string>
+    <string name="Item4">Opcion 4</string>
+    <string name="Button_IrAlPrimerActivity">Ir al primer Activity</string>
+    <string name="Button_Ir_Al_Segundo_Activity">Ir al segundo activity</string>
 </resources>

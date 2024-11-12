@@ -4,4 +4,5 @@
     <item android:title="@string/Item1" />
     <item android:title="@string/Item2" />
     <item android:title="@string/Item3" />
+    <item android:title="@string/Item4" />
 </menu>

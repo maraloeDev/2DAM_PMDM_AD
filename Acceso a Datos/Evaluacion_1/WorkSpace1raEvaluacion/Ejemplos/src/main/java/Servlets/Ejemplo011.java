@@ -87,5 +87,5 @@ public class Ejemplo011 extends HttpServlet {
 	        ex.printStackTrace();
 	    }
 	    System.out.println("Thread: " + Thread.currentThread().getName() + " usa el valor: " + val);
-	}
+	}	
 }
