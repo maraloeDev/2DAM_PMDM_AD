@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejemplo010_Datos_de_Fragment_a_Activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TextView_DatoRecibido" />
+    <string name="TextView_PasarDatoAActivity">Pasar dato a Activity</string>
+    <string name="Button_Incrementar">Incrementar</string>
+    <string name="TextView_Contador">0</string>
+</resources>

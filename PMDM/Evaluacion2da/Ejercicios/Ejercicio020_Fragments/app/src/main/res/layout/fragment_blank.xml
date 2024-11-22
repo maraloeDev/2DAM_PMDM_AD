@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+
+    <Button
+        android:id="@+id/b_Incrementar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Incrementar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_NumeroContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/TextView_NumeroContador" />
+
+        <TextView
+            android:id="@+id/tv_Numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Button_NumeroContador"
+            android:textSize="34sp" />
+    </LinearLayout>
+</LinearLayout>

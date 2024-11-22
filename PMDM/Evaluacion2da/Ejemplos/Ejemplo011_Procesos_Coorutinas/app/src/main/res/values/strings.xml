@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ejemplo011_Procesos_Coorutinas</string>
+    <string name="Button_Incrementar">Incrementar</string>
+</resources>
