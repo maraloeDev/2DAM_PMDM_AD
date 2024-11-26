@@ -1,4 +1,4 @@
-package com.maraloedev.ejemplo012_navigation_component
+package com.example.ejem12_navigationcomponent
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.maraloedev.ejemplo012_navigation_component.databinding.Fragment1Binding
+import com.example.ejem12_navigationcomponent.databinding.Fragment1Binding
+
 
 class Fragment1 : Fragment() {
 
@@ -18,13 +19,25 @@ class Fragment1 : Fragment() {
     ): View? {
         binding = Fragment1Binding.inflate(inflater, container, false)
 
-
-
-        binding.bRetroceder2.setOnClickListener {
-            val dato = Bundle().apply { putString("dato", binding.tietDato.text.toString()) }
-            findNavController().navigate(R.id.action_fragment1_to_fragment2, dato)
+        arguments?.getString("dato_recibido")?.let {
+            binding.tvDatoRecibido.text = it
         }
-        return binding.root
+        /*val mensaje = requireArguments()?.getString("dato_recibido")
+        binding.tvDatoRecibido.text = mensaje*/
 
+
+        binding.bAvanzar.setOnClickListener(){
+            val dato:Bundle = Bundle()
+            dato.putString("dato_recibido", binding.tietDato.text.toString())
+            findNavController().navigate(R.id.action_fragment1_to_fragment2,dato)
+        }
+
+
+
+
+
+        return binding.root
     }
+
+
 }

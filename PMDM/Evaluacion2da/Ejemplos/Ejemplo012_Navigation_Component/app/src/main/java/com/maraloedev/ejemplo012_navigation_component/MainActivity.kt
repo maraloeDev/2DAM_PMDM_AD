@@ -1,20 +1,22 @@
-package com.maraloedev.ejemplo012_navigation_component
+package com.example.ejem12_navigationcomponent
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.maraloedev.ejemplo012_navigation_component.databinding.ActivityMainBinding
+import com.example.ejem12_navigationcomponent.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
     }
 }

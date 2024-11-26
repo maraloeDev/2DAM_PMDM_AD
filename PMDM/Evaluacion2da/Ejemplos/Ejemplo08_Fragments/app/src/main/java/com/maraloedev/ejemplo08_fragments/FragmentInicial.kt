@@ -19,7 +19,6 @@ class FragmentInicial : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentInicialBinding.inflate(inflater, container, false)
-       // binding.tvFragmentSaludo.text = "Hola Mundo"
         return binding.root
     }
 

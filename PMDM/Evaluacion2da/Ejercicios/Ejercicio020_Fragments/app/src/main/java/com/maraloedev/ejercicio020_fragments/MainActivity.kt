@@ -10,7 +10,6 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity(), sumaContador {
 
     private lateinit var binding: ActivityMainBinding
-    private var contador = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity(), sumaContador {
         binding.bIniciarContador.setOnClickListener {
             lifecycleScope.launch {
                 for (i in 1..20) {
-                    binding.tvNumeroAutomatico.text = i.toString()
+                    binding.progressBar2.progress = i
                     delay(1000)
                 }
             }
