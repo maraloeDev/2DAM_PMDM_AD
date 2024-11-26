@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="usuario"
+            type="com.maraloedev.examenandroid_parte3.Usuario" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment_Registro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tv_Nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Nombre" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:text="@{usuario.nombre}"
+                android:id="@+id/tiet_Introduce_Usuario"
+                android:layout_width="186dp"
+                android:layout_height="48dp"
+                android:hint="@string/Hint_Introduce_Usuario"
+                android:textColorHint="#546E7A" />
+
+            <TextView
+                android:id="@+id/tv_Contrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Contrasena" />
+
+            <EditText
+                android:id="@+id/etp_Introduce_Password"
+                android:layout_width="228dp"
+                android:layout_height="48dp"
+                android:autofillHints=""
+                android:text="@{usuario.contrasena}"
+                android:ems="10"
+                android:hint="@string/Hint_Introduce_una_Contrasena"
+                android:inputType="textPassword"
+                android:textColorHint="#546E7A" />
+
+            <Button
+                android:id="@+id/b_Guardar"
+                android:layout_width="412dp"
+                android:layout_height="51dp"
+                android:text="@string/Button_Guardar"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <Button
+                android:id="@+id/b_Listar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Button_Listar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
