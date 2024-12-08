@@ -12,9 +12,8 @@ public class Persona {
 	public Persona() {
 		
 	}
-	
+
 	public Persona(String dni, String nombre, String apellidos, String direccion, String telefono, String correo) {
-		super();
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellidos = apellidos;

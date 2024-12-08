@@ -4,51 +4,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%Persona p = request.getAttribute("Persona") != null ? (Persona) request.getAttribute("Persona") : new Persona(); %>
-
 <meta charset="UTF-8">
-<title>RECOGIDA DE DATOS</title>
+<title>RECOGIDA PERSONA</title>
 </head>
 <body>
+<%--Recupero del contexto el atributo persona, que contiene el objeto persona --%>
+	<%Persona persona = getServletContext().getAttribute("persona")!=null?(Persona) getServletContext().getAttribute("persona"): new Persona(); %>
+	<form action="ServletPersona" method="post">
 
-	<fieldset>
-		<legend>
-			<h1>Recogida de datos</h1>
-		</legend>
+		<fieldset>
+			<legend>RECOGIDA PERSONA</legend>
 
-		<form action="ServletPersona" method="post">
 			<table>
 				<tr>
-					<td>DNI/NIF:</td>
-					<td><input type="text" value="<%=p.getDni()!=null ? p.getDni():""%>" name="dni" size="10"></td>
+					<td>dni</td>
+					<td><input type="text" name="dni" value="<%=persona.getDni()!=null?persona.getDni():""%>" required="required"></td>
 				</tr>
+
 				<tr>
-					<td>Nombre:</td>
-					<td><input type="text" value="<%=p.getNombre()!=null?p.getNombre():""%>" name="nombre" size="20"></td>
+					<td>nombre</td>
+					<td><input type="text" name="nombre" value="<%=persona.getNombre()!=null?persona.getNombre():""%>" required="required"></td>
+
 				</tr>
+
 				<tr>
-					<td>Apellidos:</td>
-					<td><input type="text" value="<%=p.getApellidos()!=null?p.getApellidos():""%>" name="apellidos" size="40"
-						maxlength="40"></td>
+					<td>apellidos</td>
+					<td><input type="text" name="apellidos" value="<%=persona.getApellidos()!=null?persona.getApellidos():"" %>" required="required"></td>
+
 				</tr>
+
 				<tr>
-					<td>Dirección:</td>
-					<td><input type="text" value="<%=p.getDireccion()!=null?p.getDireccion():"" %>" name="direccion" size="40"
-						maxlength="40"></td>
+					<td>direccion</td>
+					<td><input type="text" name="direccion" value="<%=persona.getDireccion()!=null?persona.getDireccion():""%>" required="required"></td>
 				</tr>
+
 				<tr>
-					<td>Teléfono:</td>
-					<td><input type="text" value="<%=p.getTelefono()!=null? p.getTelefono():""%>" name="telefono" size="9"></td>
+					<td>telefono</td>
+					<td><input type="text" name="telefono" value="<%=persona.getTelefono()!=null?persona.getTelefono():""%>" required="required"></td>
 				</tr>
+
 				<tr>
-					<td>Correo:</td>
-					<td><input type="text" value="<%=p.getCorreo()!=null? p.getCorreo():""%>" name="correo" size="40"></td>
-				</tr>
-				<tr>
-					<td><input type="submit" name="Enviar" value="Enviar"></td>
+					<td>correo</td>
+					<td><input type="text" name="correo" value="<%=persona.getCorreo()!=null?persona.getCorreo():""%>" required="required"></td>
 				</tr>
 			</table>
-		</form>
-	</fieldset>
+			<input type="submit" name="boton" value="Enviar">
+
+		</fieldset>
+	</form>
 </body>
 </html>

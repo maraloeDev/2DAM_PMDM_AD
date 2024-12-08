@@ -1,54 +1,57 @@
 <%@page import="com.maraloedev.modelo.Persona"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<%Persona p = request.getAttribute("Persona") != null ? (Persona) request.getAttribute("Persona") : new Persona(); %>
-<meta charset="UTF-8">
-<title>MOSTRAR DATOS</title>
+<title>MOSTRAR PERSONA</title>
 </head>
 <body>
+<%--Recupero del contexto el atributo persona, que contiene el objeto persona --%>
+<%Persona persona = getServletContext().getAttribute("persona")!=null?(Persona) getServletContext().getAttribute("persona"): new Persona(); %>
+	<form action="ServletPersona" method="post">
 
-	<fieldset>
-		<legend>
-			<h1>Mostrar datos</h1>
-		</legend>
+		<fieldset>
+			<legend>MOSTRAR PERSONA</legend>
 
-		<form action="ServletPersona" method="post">
 			<table>
 				<tr>
-					<td>DNI/NIF:</td>
-					<td><input type="text" value="<%=p.getDni()!=null ? p.getDni():""%>" name="dni" size="10" disabled="disabled"></td>
+					<td>dni</td>
+					<td><input type="text" name="dni" value="<%=persona.getDni()!=null?persona.getDni():""%>" disabled="disabled"></td>
 				</tr>
+
 				<tr>
-					<td>Nombre:</td>
-					<td><input type="text" value="<%=p.getNombre()!=null?p.getNombre():""%>" name="nombre" size="20" disabled="disabled"></td>
+					<td>nombre</td>
+					<td><input type="text" name="nombre" value="<%=persona.getNombre()!=null?persona.getNombre():""%>" disabled="disabled"></td>
+
 				</tr>
+
 				<tr>
-					<td>Apellidos:</td>
-					<td><input type="text" value="<%=p.getApellidos()!=null?p.getApellidos():""%>" name="apellidos" size="40" disabled="disabled"
-						maxlength="40"></td>
+					<td>apellidos</td>
+					<td><input type="text" name="apellidos" value="<%=persona.getApellidos()!=null?persona.getApellidos():"" %>" disabled="disabled"></td>
+
 				</tr>
+
 				<tr>
-					<td>Dirección:</td>
-					<td><input type="text" value="<%=p.getDireccion()!=null?p.getDireccion():"" %>" name="direccion" size="40" disabled="disabled"
-						maxlength="40"></td>
+					<td>direccion</td>
+					<td><input type="text" name="direccion" value="<%=persona.getDireccion()!=null?persona.getDireccion():""%>" disabled="disabled"></td>
 				</tr>
+
 				<tr>
-					<td>Teléfono:</td>
-					<td><input type="text" value="<%=p.getTelefono()!=null? p.getTelefono():""%>" name="telefono" size="9" disabled="disabled"></td>
+					<td>telefono</td>
+					<td><input type="text" name="telefono" value="<%=persona.getTelefono()!=null?persona.getTelefono():""%>" disabled="disabled"></td>
 				</tr>
+
 				<tr>
-					<td>Correo:</td>
-					<td><input type="text" value="<%=p.getCorreo()!=null? p.getCorreo():""%>" name="correo" size="40" disabled="disabled"></td>
-				</tr>
-				<tr>
-					<td><input type="submit" name="Volver" value="Volver"></td>
+					<td>correo</td>
+					<td><input type="text" name="correo" value="<%=persona.getCorreo()!=null?persona.getCorreo():""%>" disabled="disabled"></td>
 				</tr>
 			</table>
-		</form>
-	</fieldset>
+			<input type="submit" name="boton" value="Volver">
+
+		</fieldset>
+	</form>
+
 </body>
 </html>

@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.maraloedev</groupId>
-	<artifactId>I_Ejercicios7_Recogida_de_Datos</artifactId>
+	<artifactId>I_APP_JEE_Recogida_de_Datos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>I_Ejercicios7_Recogida_de_Datos Maven Webapp</name>
+	<name>I_APP_JEE_Recogida_de_Datos Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -21,6 +21,7 @@
 	</properties>
 
 	<dependencies>
+
 		<!--
 		https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 		<dependency>
@@ -39,7 +40,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>I_Ejercicios7_Recogida_de_Datos</finalName>
+		<finalName>I_APP_JEE_Recogida_de_Datos</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>
