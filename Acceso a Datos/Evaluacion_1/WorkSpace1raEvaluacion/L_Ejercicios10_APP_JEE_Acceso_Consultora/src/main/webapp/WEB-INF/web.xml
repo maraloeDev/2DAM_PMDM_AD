@@ -12,9 +12,9 @@
     <url-pattern>/ServletUsuario</url-pattern>
   </servlet-mapping>
   <listener>
-    <listener-class>com.maraloedev.listeners.EventSession</listener-class>
+    <listener-class>com.maraloedev.events.DatosSession</listener-class>
   </listener>
   <listener>
-    <listener-class>com.maraloedev.listeners.ListenerCategorias</listener-class>
+    <listener-class>com.maraloedev.events.ListaCategorias</listener-class>
   </listener>
 </web-app>

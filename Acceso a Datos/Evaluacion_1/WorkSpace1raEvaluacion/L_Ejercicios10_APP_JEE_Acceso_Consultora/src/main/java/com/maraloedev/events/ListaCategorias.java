@@ -1,4 +1,4 @@
-package com.maraloedev.listeners;
+package com.maraloedev.events;
 
 import java.util.HashMap;
 
@@ -7,18 +7,17 @@ import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 
 /**
- * Application Lifecycle Listener implementation class ListenerCategorias
+ * Application Lifecycle Listener implementation class ListaCategorias
  *
  */
-@WebListener("Registro.jsp")
-public class ListenerCategorias implements ServletContextListener {
+@WebListener("Registro")
+public class ListaCategorias implements ServletContextListener {
 	
-	private HashMap<String, String> mapaCategorias = new HashMap <String, String>();
-
+	private HashMap<String, String> mapaCategorias = new HashMap<String, String>();
     /**
      * Default constructor. 
      */
-    public ListenerCategorias() {
+    public ListaCategorias() {
         // TODO Auto-generated constructor stub
     }
 
@@ -26,8 +25,7 @@ public class ListenerCategorias implements ServletContextListener {
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
     public void contextInitialized(ServletContextEvent sce)  { 
-    	
-          //Las categorías profesionales están asignadas a distintos perfiles de puestos de trabajo
+
     	if(mapaCategorias == null) {
     		mapaCategorias = new HashMap<String, String>();
     	}
@@ -36,9 +34,10 @@ public class ListenerCategorias implements ServletContextListener {
     	mapaCategorias.put("C1B", "Programador Junior");
     	mapaCategorias.put("C2A", "Analista");
     	mapaCategorias.put("C2B", "Analista-Programador");
-    	mapaCategorias.put("C3", "Jefe de Proyecto");
+    	mapaCategorias.put("C3",  "Jefe de Proyecto ");
     	
     	sce.getServletContext().setAttribute("mapaCategorias", mapaCategorias);
+    	
     }
 
 	/**
