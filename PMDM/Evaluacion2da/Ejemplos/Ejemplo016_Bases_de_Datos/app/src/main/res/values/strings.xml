@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ejemplo016_Bases_de_Datos</string>
+    <string name="Button_RecuperarPersona">Recuperar Persona del primer elemento</string>
 </resources>

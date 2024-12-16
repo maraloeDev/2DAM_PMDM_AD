@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo015_sharedpreferences"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo015_sharedpreferences"
@@ -25,6 +25,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

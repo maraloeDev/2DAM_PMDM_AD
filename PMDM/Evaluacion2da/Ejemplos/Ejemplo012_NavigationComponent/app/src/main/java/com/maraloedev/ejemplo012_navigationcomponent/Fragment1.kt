@@ -5,55 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.maraloedev.ejemplo012_navigationcomponent.databinding.Fragment1Binding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Fragment1.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Fragment1 : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var binding: Fragment1Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1, container, false)
-    }
+        binding = Fragment1Binding.inflate(inflater,container,false)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Fragment1.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Fragment1().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        //Recoger el valor del datoRecibido
+        arguments?.getString("dato_recibido")?.let {
+            binding.tvDatoRecibido.text = it
+        }
+
+        //Recoges el dato del bundle, y añades el texto del tiet y pasas el valor al f2
+        binding.bAvanzar.setOnClickListener(){
+            val dato:Bundle = Bundle()
+            dato.putString("dato_recibido", binding.tietDato.text.toString())
+            findNavController().navigate(R.id.action_fragment1_to_fragment2,dato)
+        }
+        return binding.root
     }
 }

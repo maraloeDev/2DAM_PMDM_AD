@@ -1,19 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
+        <variable
+            name="persona"
+            type="com.maraloedev.ejemplo016_bases_de_datos.Persona" />
+    </data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Nombre"
+                android:text="@{persona.nombre}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiet_edad"
+                android:text="@{String.valueOf(persona.edad)}"
+                android:layout_margin="5dp"
+                android:hint="Edad" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiet_direccion"
+                android:text="@{persona.direccion}"
+                android:layout_margin="5dp"
+                android:hint="Direccion" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_insertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insertar" />
+
+        <Button
+            android:id="@+id/b_listar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiet_id"
+                android:layout_margin="5dp"
+                android:hint="Identificador" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_borrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar por id" />
+
+        <Button
+            android:id="@+id/b_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar por id" />
+
+        <Button
+            android:id="@+id/b_RecuperarPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Button_RecuperarPersona" />
+
+        <ListView
+            android:id="@+id/lv_Personas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</layout>

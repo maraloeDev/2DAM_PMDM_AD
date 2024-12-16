@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ejemplo015_SharedPreferences</string>
+    <string name="Button_Guardar">Guardar</string>
 </resources>

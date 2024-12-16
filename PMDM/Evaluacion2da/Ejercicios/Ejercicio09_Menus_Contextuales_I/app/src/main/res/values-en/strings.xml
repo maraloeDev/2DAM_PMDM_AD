@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Exercise09_Menus_Contextualizes_I</string>
-    <string name="Button_Finalizar">Finish</string>
-    <string name="Button_FinalizarTambien">Finish also</string>
-    <string name="Button_CambiarIdioma">Change Idiom</string>
-</resources>
