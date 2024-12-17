@@ -1,8 +1,10 @@
+<%@page import="com.maraloedev.model.Cotizacion"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
+<%Cotizacion cotizacion = session.getAttribute("cotizacion")!=null ? (Cotizacion)session.getAttribute("cotizacion"):new Cotizacion(); %>
 <meta charset="UTF-8">
 <title>ACCESO</title>
 </head>
@@ -13,7 +15,7 @@
             <table>
                 <tr>
                 <td>Nombre:</td>
-                <td><input type="text" name="nombre"></td>
+                <td><input type="text" name="nombre" value="<%=cotizacion.getNombre()%>"></td>
             </tr>
 
             <tr>
