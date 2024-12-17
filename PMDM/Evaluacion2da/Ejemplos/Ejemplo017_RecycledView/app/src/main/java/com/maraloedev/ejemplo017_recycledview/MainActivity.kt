@@ -18,11 +18,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val persona1 = Persona(ContextCompat.getDrawable(R.drawable.foto1)!!, "Eduardo1", 25, "609343434")
-        val persona2 = Persona(ContextCompat.getDrawable(R.drawable.foto2)!!, "Eduardo2", 25, "609343434")
-        val persona3 = Persona(ContextCompat.getDrawable(R.drawable.foto3)!!, "Eduardo3", 25, "609343434")
+        val persona1 = Persona(ContextCompat.getDrawable(this,R.drawable.foto1)!!, "Eduardo1", 25, "609343434")
+        val persona2 = Persona(ContextCompat.getDrawable(this,R.drawable.foto2)!!, "Eduardo2", 25, "609343434")
+        val persona3 = Persona(ContextCompat.getDrawable(this,R.drawable.foto3)!!, "Eduardo3", 25, "609343434")
 
         val listaPersona = listOf(persona1, persona2, persona3)
+
+        binding.rvVistaDatos.adapter = AdaptadorPersona(listaPersona)
+
+
 
 
 

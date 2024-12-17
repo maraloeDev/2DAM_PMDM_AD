@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.naming.NamingException;
+
 import com.maraloedev.webapp.entities.Alumno;
 
 public class AlumnoDAO {
@@ -19,7 +21,11 @@ public class AlumnoDAO {
 			ps.setString(4, a.getCiclo());
 			ps.setString(5, a.getCurso());
 			return ps.executeUpdate();
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		return 0;
 
 	}
 
@@ -35,6 +41,9 @@ public class AlumnoDAO {
 				alumno = new Alumno(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
 			}
 
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return alumno;
 
