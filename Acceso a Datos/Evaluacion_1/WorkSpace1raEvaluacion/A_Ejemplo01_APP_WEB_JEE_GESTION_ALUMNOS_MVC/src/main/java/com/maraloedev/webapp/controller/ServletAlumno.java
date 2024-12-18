@@ -110,7 +110,5 @@ public class ServletAlumno extends HttpServlet {
 			}
 			request.getRequestDispatcher(page).forward(request, response);
 		}
-
 	}
-
 }
