@@ -17,7 +17,7 @@
 <h1>COTIZAGF S.L</h1>
 
 		<%if(request.getSession().getAttribute("fechaSession")!=null && request.getSession().getAttribute("nombre")!=null){%>
-		<h4>La sesion esta activa por el usuario : <%=cotizacion.getNombre() %></h4>
+		<h4>La sesion esta activa por el usuario : <%=cotizacion.getNombre()!=null ? cotizacion.getNombre() : "" %></h4>
 		<h4>Fecha de nueva cotizacion : ${fechaSession }</h4>
 		<% }%>
 		

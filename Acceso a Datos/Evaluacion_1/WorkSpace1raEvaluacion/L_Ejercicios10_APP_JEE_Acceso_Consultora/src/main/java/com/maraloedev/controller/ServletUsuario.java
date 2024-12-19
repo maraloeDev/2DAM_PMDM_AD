@@ -33,8 +33,9 @@ public class ServletUsuario extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		HttpSession session = request.getSession(true);
-		// Recojo los datos de nombre y la contraseña
+		
+		HttpSession session = request.getSession();
+		// Recojo los datos de nombre, la contraseña y la categoria
 		String nombre = request.getParameter("nombre");
 		String contrasena = request.getParameter("contrasena");
 		String categoria = request.getParameter("categoria");
@@ -59,16 +60,12 @@ public class ServletUsuario extends HttpServlet {
 			session.setAttribute("listaUsuarios", listaUsuarios);
 			session.setAttribute("usuario", usuario);
 			
-			
-
 			String page = request.getParameter("Registro") != null ? "Acceso.jsp"
 					: request.getParameter("Acceso") != null ? "Aplicacion.jsp"
 							: request.getParameter("AccesoApp") != null ? "Acceso.jsp" : "";
 			
 			request.getRequestDispatcher(page).forward(request, response);
 			session.invalidate();
-			
-
 		}
 	}
 

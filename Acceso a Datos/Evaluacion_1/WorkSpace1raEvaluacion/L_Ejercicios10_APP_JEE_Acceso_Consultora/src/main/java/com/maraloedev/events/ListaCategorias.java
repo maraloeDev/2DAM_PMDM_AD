@@ -10,7 +10,7 @@ import jakarta.servlet.annotation.WebListener;
  * Application Lifecycle Listener implementation class ListaCategorias
  *
  */
-@WebListener("Registro")
+@WebListener("Registro.jsp")
 public class ListaCategorias implements ServletContextListener {
 	
 	private HashMap<String, String> mapaCategorias = new HashMap<String, String>();

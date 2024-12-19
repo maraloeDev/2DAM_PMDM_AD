@@ -15,6 +15,7 @@ HashMap<String, String> listaUsuarios = session.getAttribute("listaUsuarios") !=
 <%
 Usuario usuario = session.getAttribute("usuario") != null ? (Usuario) session.getAttribute("usuario") : new Usuario();
 %>
+
 <meta charset="UTF-8">
 <title>Aplicacion</title>
 </head>
@@ -25,7 +26,7 @@ Usuario usuario = session.getAttribute("usuario") != null ? (Usuario) session.ge
 	<form action="ServletUsuario" method="post">
 
 		<%=usuario.getNombre()%>
-		has accedido correctamente Numero de veces que has accedido: 1
+		has accedido correctamente Numero de veces que has accedido: 1 veces
 		<table border="2">
 			<tr>
 				<td>Usuarios registrados</td>
@@ -42,6 +43,5 @@ Usuario usuario = session.getAttribute("usuario") != null ? (Usuario) session.ge
 			</tr>
 		</table>
 	</form>
-
 </body>
 </html>

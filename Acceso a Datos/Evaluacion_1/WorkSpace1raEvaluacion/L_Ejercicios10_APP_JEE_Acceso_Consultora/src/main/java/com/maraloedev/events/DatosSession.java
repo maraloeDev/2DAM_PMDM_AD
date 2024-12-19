@@ -1,4 +1,4 @@
-package com.maraloedev.events;
+ package com.maraloedev.events;
 
 import java.util.Date;
 import java.util.HashMap;

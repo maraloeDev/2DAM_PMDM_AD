@@ -15,12 +15,12 @@
             <table>
                 <tr>
                 <td>Nombre:</td>
-                <td><input type="text" name="nombre" value="<%=cotizacion.getNombre()%>"></td>
+                <td><input type="text" name="nombre" value="<%=cotizacion.getNombre()!=null ? cotizacion.getNombre() : ""%>"></td>
             </tr>
 
             <tr>
                 <td>Codigo Pin:</td>
-                <td><input type="text" name="codigoPin"></td>
+                <td><input type="text" name="codigoPin" value="<%=cotizacion.getCodigo_Pin()!=null ? cotizacion.getCodigo_Pin() : ""%>"></td>
             </tr>
 
             <tr>
