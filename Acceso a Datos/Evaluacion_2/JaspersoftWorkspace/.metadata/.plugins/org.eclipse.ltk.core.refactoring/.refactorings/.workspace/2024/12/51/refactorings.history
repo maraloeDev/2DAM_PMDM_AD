@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;EjemploJasperReport&apos; to &apos;A_EjemploJasperReport&apos;" description="Rename resource &apos;EjemploJasperReport&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/EjemploJasperReport" name="A_EjemploJasperReport" stamp="1734622296356" updateReferences="true"/>
-</session>

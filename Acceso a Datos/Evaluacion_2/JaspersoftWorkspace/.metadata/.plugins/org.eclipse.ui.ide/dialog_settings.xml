@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\Acceso a Datos\Evaluacion_2\JaspersoftWorkspace"/>
+			<item value="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\Acceso a Datos\Evaluacion_1\JaspersoftWorkspace"/>
+		</list>
+	</section>
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="net.sf.jasperreports.projectwizar"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.jaspersoft.studio"/>
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.pde.PDE"/>
 		</list>
 	</section>
 </section>

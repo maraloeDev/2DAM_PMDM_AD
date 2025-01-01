@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl">
-  <name>New Data Adapter</name>
-  <classpath>C:\Users\Eduardo\Desktop\mysql-connector-j-8.0.33-javadoc.jar</classpath>
-  <driver>net.sourceforge.jtds.jdbc.Driver</driver>
+  <name>EjemploDataAdapter</name>
+  <classpath>C:\Apache-tomcat-10.1.30\apache-tomcat-10.1.30\lib\jasper\mysql-connector-j-8.3.0.jar</classpath>
+  <driver>com.mysql.jdbc.Driver</driver>
   <username>root</username>
   <password/>
-  <url>jdbc:jtds:sqlserver://localhost/empresa</url>
+  <url>jdbc:mysql://localhost/empresa</url>
   <database/>
   <savePassword>true</savePassword>
   <serverAddress/>
