@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Ejercicio010_NumeroAsync</string>
-    <string name="TextView_Numero">Numero</string>
-    <string name="Button_TirarDado">Tirar Dado</string>
-    <string name="TextView_NumeroAleatorio">0</string>
-</resources>

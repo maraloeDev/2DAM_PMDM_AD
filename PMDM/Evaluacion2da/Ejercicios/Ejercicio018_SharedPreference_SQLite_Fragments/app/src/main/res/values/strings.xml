@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Ejercicio018_SharedPreference_SQLite_Fragments</string>
-    <string name="Hint_Telefono">Numero de telefono</string>
-    <string name="Hint_Nombre">Nombre</string>
-    <string name="Button_Guardar">Guardar</string>
-    <string name="Button_Finalizar">Finalizar</string>
-</resources>
