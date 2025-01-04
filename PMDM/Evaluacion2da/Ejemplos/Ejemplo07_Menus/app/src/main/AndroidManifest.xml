@@ -13,11 +13,9 @@
         android:theme="@style/Theme.Ejemplo07_Menus"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Ejemplo07_Menus">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

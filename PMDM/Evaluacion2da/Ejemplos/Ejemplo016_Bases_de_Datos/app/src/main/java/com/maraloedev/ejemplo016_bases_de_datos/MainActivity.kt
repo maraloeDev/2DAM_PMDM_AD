@@ -2,6 +2,7 @@ package com.maraloedev.ejemplo016_bases_de_datos
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
@@ -16,53 +17,63 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val basedatos: BD =
-            Room.databaseBuilder(this, BD::class.java, "bdPersonas").allowMainThreadQueries()
+        // Crea una instancia de la base de datos.
+        val basedatos: Conexion_Base_de_datos =
+            Room.databaseBuilder(this, Conexion_Base_de_datos::class.java, "bdPersonas")
+                .allowMainThreadQueries()
                 .build()
         val personaDAO = basedatos.personaDao()
 
+        // Configura el botón para insertar una nueva persona.
         binding.bInsertar.setOnClickListener {
             val persona = Persona(
-                binding.tietNombre.text.toString(),
-                binding.tietEdad.text.toString().toInt(),
-                binding.tietDireccion.text.toString()
+                binding.tietDireccion.text.toString(),
+                binding.tietEdad.text.toString().toInt().toString(),
+                binding.tietNombre.text.toString()
             )
             Log.d("Persona", persona.toString())
             personaDAO?.insertar(persona)
         }
 
-        binding.bRecuperarPersona.setOnClickListener {
-           val id = binding.tietId.text.toString().toInt()
-            val persona = personaDAO?.recuperarUsuario(id)
+        // Configura el botón para recuperar la primera persona.
+        binding.bRecuperarPrimero.setOnClickListener {
+            val persona = personaDAO?.recuperarUsuario(1)
             binding.persona = persona
         }
 
+        // Configura el botón para listar todas las personas.
         binding.bListar.setOnClickListener {
-            val persona = personaDAO?.listar()
-            val adaptador =
-                ArrayAdapter<Persona>(this, android.R.layout.simple_spinner_item, persona!!)
-
+            val personas = personaDAO?.listar()
+            val adaptador = ArrayAdapter<Persona>(this, android.R.layout.simple_list_item_1, personas!!)
             binding.lvPersonas.adapter = adaptador
         }
 
-        binding.bBorrar.setOnClickListener {
-            val id = binding.tietId.text.toString().toInt()
-            val persona = personaDAO?.recuperarUsuario(id)
-            personaDAO?.eliminar(persona!!)
-        }
-
-        binding.bActualizar.setOnClickListener {
-            val persona = personaDAO?.recuperarUsuario(binding.tietId.text.toString().toInt())
-            persona?.nombre = binding.tietNombre.text.toString()
-            persona?.edad = binding.tietEdad.text.toString().toInt()
-            persona?.direccion = binding.tietDireccion.text.toString()
-            personaDAO?.actualizar(persona!!)
-        }
-
+        // Configura el evento de clic en los elementos de la lista.
         binding.lvPersonas.setOnItemClickListener { adapterView, view, i, l ->
-            val persona = adapterView.getItemAtPosition(i) as Persona
+            val persona = (adapterView as ArrayAdapter<Persona>).getItem(i)
             binding.persona = persona
         }
 
+        // Configura el botón para borrar una persona.
+        binding.bBorrar.setOnClickListener {
+            val persona = Persona(
+                binding.tietDireccion.text.toString(),
+                binding.tietEdad.text.toString().toInt().toString(),
+                binding.tietNombre.text.toString()
+            )
+            persona.id = binding.tietId.text.toString().toInt().toString()
+            personaDAO?.eliminar(persona)
+        }
+
+        // Configura el botón para actualizar una persona.
+        binding.bActualizar.setOnClickListener(View.OnClickListener {
+            val persona = Persona(
+                binding.tietDireccion.text.toString(),
+                binding.tietEdad.text.toString().toInt().toString(),
+                binding.tietNombre.text.toString()
+            )
+            persona.id = binding.tietId.text.toString().toInt().toString()
+            personaDAO?.actualizar(persona)
+        })
     }
 }

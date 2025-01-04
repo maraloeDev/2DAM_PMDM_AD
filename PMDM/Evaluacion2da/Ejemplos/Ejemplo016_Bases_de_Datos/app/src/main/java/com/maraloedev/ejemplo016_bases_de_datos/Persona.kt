@@ -4,25 +4,19 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+// Define una entidad de base de datos llamada `Persona` con anotaciones de Room.
+// Esta clase representa una tabla en la base de datos con el nombre "persona".
 @Entity(tableName = "persona")
-class Persona {
+data class Persona(
+    // Clave primaria que autogenera su valor.
+    @PrimaryKey(autoGenerate = true) var id: String = 0,
 
-    @PrimaryKey(autoGenerate = true)
-    var id:Int = 0
-    @ColumnInfo(name = "nombre")
-    var nombre:String = ""
-    @ColumnInfo(name = "edad")
-    var edad:Int = 0
-    @ColumnInfo(name = "direccion")
-    var direccion:String = ""
+    // Columna para el nombre de la persona.
+    @ColumnInfo(name = "nombre") val nombre: String = "",
 
-    constructor(nombre: String, edad: Int, direccion: String) {
-        this.nombre = nombre
-        this.edad = edad
-        this.direccion = direccion
-    }
+    // Columna para la edad de la persona.
+    @ColumnInfo(name = "edad") val edad: String = 0,
 
-    override fun toString(): String {
-        return "Nombre $nombre"
-    }
-}
+    // Columna para la dirección de la persona.
+    @ColumnInfo(name = "direccion") val direccion: String = ""
+)

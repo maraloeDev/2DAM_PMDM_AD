@@ -1,9 +1,7 @@
-package com.maraloed.ejemplo07_menus
+package com.maraloedev.ejemplo07_menus
 
 import android.content.Intent
 import android.os.Bundle
-import com.maraloedev.ejemplo07_menus.GestionMenus
-import com.maraloedev.ejemplo07_menus.MainActivity2
 import com.maraloedev.ejemplo07_menus.databinding.ActivityMainBinding
 
 class MainActivity : GestionMenus() {
@@ -22,7 +20,7 @@ class MainActivity : GestionMenus() {
         }
 
 
-        registerForContextMenu(binding.linerLayoutPrincipal)
+        registerForContextMenu(binding.llPrincipal)
 
     }
 

@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 open class GestionMenus : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ open class GestionMenus : AppCompatActivity() {
         menuInfo: ContextMenu.ContextMenuInfo?
     ) {
         super.onCreateContextMenu(menu, v, menuInfo)
-        menuInflater.inflate(R.menu.mimenu, menu)
+        menuInflater.inflate(R.menu.mi_menu, menu)
     }
 
 
@@ -36,7 +37,7 @@ open class GestionMenus : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.mimenu, menu)
+        menuInflater.inflate(R.menu.mi_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 }
