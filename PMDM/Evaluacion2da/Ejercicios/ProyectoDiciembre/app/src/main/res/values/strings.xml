@@ -3,4 +3,32 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- STRINGS DE activity_registro.xml -->
+    <string name="tv_Nombre_Usuario_Registro">Nombre de Usuario</string>
+    <string name="Hint_Caja_Nombre_Usuario_Registro">Introduce un nombre de usuario</string>
+    <string name="tv_Nombre_Registro">Nombre</string>
+    <string name="tiet_Nombre_Registro">Introduce un nombre</string>
+    <string name="tv_Contrasena_Registro">Contraseña</string>
+    <string name="tiet_Contrasena_Registro">Introduce una Contraseña</string>
+    <string name="Button_Registro">Registro</string>
+
+    <!-- STRINGS DE activity_inicio_de_sesion.xml -->
+    <string name="tv_Nombre_Inicio_Sesion">Nombre</string>
+    <string name="tiet_Nombre">Introduce un nombre de usuario</string>
+    <string name="tv_Contrasena_Inicio_Sesion">Contraseña</string>
+    <string name="tiet_Contrasena">Introduce una contraseña</string>
+    <string name="Button_Iniciar_Sesion">Iniciar Sesion</string>
+
+    <!-- STRINGS DE menu.xml -->
+    <string name="Item_Iniciar_Sesion">Iniciar Sesion</string>
+    <string name="Item_Registrarse">Registrarse</string>
+
+    <!-- STRINGS DE bottom_nav_menu.xml -->
+    <string name="Item_Perfil">Perfil</string>
+    <string name="Item_Mi_Dia">Mi dia</string>
+    <string name="Item_Completadas">Completadas</string>
+    <string name="hello_blank_fragment">a</string>
+
+
 </resources>

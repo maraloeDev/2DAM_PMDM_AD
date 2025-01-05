@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    app:startDestination="@id/UI_Perfil">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.maraloedev.proyectodiciembre.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/UI_Perfil"
+        android:name="com.maraloedev.proyectodiciembre.ui.perfil.UI_Perfil"
+        android:label="fragment_u_i__perfil"
+        tools:layout="@layout/fragment_u_i__perfil"
+        >
+        <action
+            android:id="@+id/action_UI_Perfil_to_UI_Mi_Dia"
+            app:destination="@id/UI_Mi_Dia" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.maraloedev.proyectodiciembre.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/UI_Mi_Dia"
+        android:name="com.maraloedev.proyectodiciembre.ui.mi_dia.UI_Mi_Dia"
+        android:label="fragment_u_i__mi__dia"
+        tools:layout="@layout/fragment_u_i__mi__dia" >
+        <action
+            android:id="@+id/action_UI_Mi_Dia_to_UI_Completadas"
+            app:destination="@id/UI_Completadas" />
+        <action
+            android:id="@+id/action_UI_Mi_Dia_to_UI_Perfil"
+            app:destination="@id/UI_Perfil" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.maraloedev.proyectodiciembre.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/UI_Completadas"
+        android:name="com.maraloedev.proyectodiciembre.ui.completadas.UI_Completadas"
+        android:label="fragment_u_i__completadas"
+        tools:layout="@layout/fragment_u_i__completadas" >
+        <action
+            android:id="@+id/action_UI_Completadas_to_UI_Mi_Dia"
+            app:destination="@id/UI_Mi_Dia" />
+    </fragment>
 </navigation>
