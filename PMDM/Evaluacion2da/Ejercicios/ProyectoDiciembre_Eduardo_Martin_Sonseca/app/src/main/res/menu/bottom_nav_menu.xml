@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_AgregarTarea"
+        android:icon="@drawable/icono_agregar_tarea"
+        android:title="@string/Item_Agregar_Tarea" />
+    <item
+        android:id="@+id/item_VerLista"
+        android:icon="@drawable/icono_ver_lista"
+        android:title="@string/Item_Ver_Lista" />
+    <item
+        android:id="@+id/item_Acercade"
+        android:icon="@drawable/icono_acerca_de"
+        android:title="@string/Item_Acerca_de" />
+</menu>

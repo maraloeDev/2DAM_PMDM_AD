@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/agregarTarea_Fragment"
+        android:name="com.maraloedev.proyectodiciembre_eduardo_martin_sonseca.ui.agregarTarea.AgregarTarea_Fragment"
+        android:label="fragment_agregar_tarea_"
+        tools:layout="@layout/fragment_agregar_tarea_" >
+        <action
+            android:id="@+id/action_agregarTarea_Fragment_to_ver_Lista_Fragment"
+            app:destination="@id/ver_Lista_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acerca_de_Fragment"
+        android:name="com.maraloedev.proyectodiciembre_eduardo_martin_sonseca.ui.acercaDe.Acerca_de_Fragment"
+        android:label="fragment_acerca_de_"
+        tools:layout="@layout/fragment_acerca_de_" >
+        <action
+            android:id="@+id/action_acerca_de_Fragment_to_ver_Lista_Fragment3"
+            app:destination="@id/ver_Lista_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ver_Lista_Fragment"
+        android:name="com.maraloedev.proyectodiciembre_eduardo_martin_sonseca.ui.verLista.Ver_Lista_Fragment"
+        android:label="fragment_ver__lista_"
+        tools:layout="@layout/fragment_ver__lista_" >
+        <action
+            android:id="@+id/action_ver_Lista_Fragment_to_acerca_de_Fragment"
+            app:destination="@id/acerca_de_Fragment" />
+        <action
+            android:id="@+id/action_ver_Lista_Fragment_to_agregarTarea_Fragment"
+            app:destination="@id/agregarTarea_Fragment" />
+    </fragment>
+</navigation>

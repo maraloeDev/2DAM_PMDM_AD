@@ -7,32 +7,37 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_acerca_de_.xml">
+        <config>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_agregar_tarea_.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ver__lista_.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_tarea.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml">
         <config>
-          <theme>@style/Theme.MyApplication</theme>
+          <theme>@style/Theme.ProyectoDiciembre_Eduardo_Martin_Sonseca</theme>
         </config>
       </layout>
     </layouts>
@@ -41,26 +46,27 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bce30b-b3a3-4dcd-b682-3252f2fb9700" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/androidTest/java/com/maraloedev/myapplication/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/tarea.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/tarea_Adapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/ui/acercaDe/AcercaDe_Fragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/ui/agregarTarea/AgregarTarea_Fragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/java/com/maraloedev/myapplication/ui/verLista/Ver_Lista_Fragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/drawable/icono_acerca_de.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/drawable/icono_agregar_tarea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/drawable/icono_ver_lista.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/layout/fragment_acerca_de_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/layout/fragment_agregar_tarea_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/layout/fragment_ver__lista_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/layout/item_tarea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoDiciembre_Eduardo_Martin_Sonseca/app/src/test/java/com/maraloedev/myapplication/ExampleUnitTest.kt" afterDir="false" />
+    <list default="true" id="57117a91-93b4-410e-a77b-736f27983201" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/tarea.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/ui/acercaDe/Acerca_de_Fragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/ui/agregarTarea/AgregarTarea_Fragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/ui/verLista/TareaAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/maraloedev/proyectodiciembre_eduardo_martin_sonseca/ui/verLista/Ver_Lista_Fragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icono_acerca_de.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icono_agregar_tarea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icono_ver_lista.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_acerca_de_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_agregar_tarea_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ver__lista_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo010_Datos_de_Fragments_a_Activities/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo010_Datos_de_Fragments_a_Activities/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo013_Bottom_Navigation/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo013_Bottom_Navigation/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo015_Shared_Preferences/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo015_Shared_Preferences/.idea/gradle.xml" afterDir="false" />
@@ -69,73 +75,7 @@
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo016_Bases_de_Datos/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo016_Bases_de_Datos/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo017_Recycled_View/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo017_Recycled_View/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Ejemplos/Ejemplo07_MenusPersonalizados/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejemplos/Ejemplo07_MenusPersonalizados/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/appInsightsSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/androidTest/java/com/maraloedev/proyectodiciembre/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/java/com/maraloedev/proyectodiciembre/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/java/com/maraloedev/proyectodiciembre/ui/completadas/UI_Completadas.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/java/com/maraloedev/proyectodiciembre/ui/mi_dia/UI_Mi_Dia.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/java/com/maraloedev/proyectodiciembre/ui/perfil/UI_Perfil.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/icono_completadas.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/icono_mi_dia.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/drawable/icono_perfil.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/layout/fragment_u_i__completadas.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/layout/fragment_u_i__mi__dia.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/layout/fragment_u_i__perfil.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/menu/menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values-land/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values-v23/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values-w1240dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values-w600dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/app/src/test/java/com/maraloedev/proyectodiciembre/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoDiciembre/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +94,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -162,10 +101,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2rJ9CHWyJNik61apSjS1P0PBToN" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rJLPAFpfEY1XP4rjmpalpY9tU3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -173,45 +115,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Android App.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Eduardo/Desktop/2DAM_PMDM_AD/PMDM/Evaluacion2da/Ejercicios/MyApplication/app/src/main/res/layout",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\Eduardo\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\Eduardo\\.gradle&quot;
     ]
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\PMDM\Evaluacion2da\Ejercicios\MyApplication\app\src\main\res\layout" />
-      <recent name="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\PMDM\Evaluacion2da\Ejercicios\MyApplication\app\src\main\res\drawable" />
-      <recent name="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\PMDM\Evaluacion2da\Ejercicios\MyApplication\app\src\main\java\com\maraloedev\myapplication" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Eduardo\Desktop\2DAM_PMDM_AD\PMDM\Evaluacion2da\Ejercicios\MyApplication\app\src\main\res\menu" />
-    </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.maraloedev.myapplication" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="My_Application.app.main" />
+      <module name="ProyectoDiciembre_Eduardo_Martin_Sonseca.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -280,15 +205,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80bce30b-b3a3-4dcd-b682-3252f2fb9700" name="Changes" comment="" />
-      <created>1736266181602</created>
+      <changelist id="57117a91-93b4-410e-a77b-736f27983201" name="Changes" comment="" />
+      <created>1736272205607</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1736266181602</updated>
+      <updated>1736272205607</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
