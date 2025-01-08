@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_tb8ZsMSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_tb8ZscSmEe-uuMlJ5b7pTQ" bindingContexts="_tb9AxMSmEe-uuMlJ5b7pTQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Ejemplo.jrxml&quot; tooltip=&quot;EjemploJasperReport/Ejemplo.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EjemploJasperReport/Ejemplo.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Listado_de_Empleados.jrxml&quot; tooltip=&quot;Ejercicio012_Manejo_Report_JEE/Listado_de_Empleados.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Ejercicio012_Manejo_Report_JEE/Listado_de_Empleados.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Ejemplo.jrxml&quot; tooltip=&quot;EjemploJasperReport/Ejemplo.jrxml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EjemploJasperReport/Ejemplo.jrxml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_tb8ZscSmEe-uuMlJ5b7pTQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_uCp0YMSmEe-uuMlJ5b7pTQ" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -24,7 +24,7 @@
           <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_uIsyAcSmEe-uuMlJ5b7pTQ" selectedElement="_uIsyCMSmEe-uuMlJ5b7pTQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_uIsyAsSmEe-uuMlJ5b7pTQ" containerData="2500" selectedElement="_JX4_QcasEe-Sfp49CT2Mig">
-              <children xsi:type="basic:PartStack" xmi:id="_JX4_QcasEe-Sfp49CT2Mig" elementId="PartStack@4d92e9da" containerData="5000" selectedElement="_uIsyBMSmEe-uuMlJ5b7pTQ">
+              <children xsi:type="basic:PartStack" xmi:id="_JX4_QcasEe-Sfp49CT2Mig" elementId="PartStack@4d92e9da" containerData="5000" selectedElement="_uIsyBcSmEe-uuMlJ5b7pTQ">
                 <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_uIsyBMSmEe-uuMlJ5b7pTQ" elementId="com.jaspersoft.studio.Repository" ref="_uIk2MMSmEe-uuMlJ5b7pTQ" closeable="true">
                   <tags>View</tags>
@@ -43,10 +43,9 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_uIsyCMSmEe-uuMlJ5b7pTQ" containerData="7500" selectedElement="_uIsyCcSmEe-uuMlJ5b7pTQ" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_uIsyCcSmEe-uuMlJ5b7pTQ" containerData="7000" selectedElement="_uIsyC8SmEe-uuMlJ5b7pTQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_uIsyCcSmEe-uuMlJ5b7pTQ" containerData="7000" selectedElement="_uIsyCsSmEe-uuMlJ5b7pTQ">
                 <children xsi:type="advanced:Placeholder" xmi:id="_uIsyCsSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_uIZQAMSmEe-uuMlJ5b7pTQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_uIsyC8SmEe-uuMlJ5b7pTQ" elementId="com.jaspersoft.studio.editor.preview.reportstateMStack" containerData="2500" selectedElement="_uIsyDMSmEe-uuMlJ5b7pTQ">
-                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_uIsyDMSmEe-uuMlJ5b7pTQ" elementId="com.jaspersoft.studio.editor.preview.reportstate" ref="_uIrj4MSmEe-uuMlJ5b7pTQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Jaspersoft Studio</tags>
@@ -115,9 +114,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_uIZQAMSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.ui.editorss" selectedElement="_uIZQAcSmEe-uuMlJ5b7pTQ">
-      <children xsi:type="basic:PartStack" xmi:id="_uIZQAcSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.e4.primaryDataStack">
+      <children xsi:type="basic:PartStack" xmi:id="_uIZQAcSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_-XGlQM2kEe-d966VtqiUtw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_-XGlQM2kEe-d966VtqiUtw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Listado_de_Empleados.jrxml" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jrxml_icon.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.jaspersoft.studio.editor.JrxmlEditor&quot; name=&quot;Listado_de_Empleados.jrxml&quot; partName=&quot;Listado_de_Empleados.jrxml&quot; title=&quot;Listado_de_Empleados.jrxml&quot; tooltip=&quot;Ejercicio012_Manejo_Report_JEE/Listado_de_Empleados.jrxml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Ejercicio012_Manejo_Report_JEE/Listado_de_Empleados.jrxml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>com.jaspersoft.studio.editor.JrxmlEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_uIk2MMSmEe-uuMlJ5b7pTQ" elementId="com.jaspersoft.studio.Repository" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Repository Explorer" iconURI="platform:/plugin/com.jaspersoft.studio/icons/jr_icon.png" tooltip="" closeable="true">
@@ -192,8 +200,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Jaspersoft Studio</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_uOw9wMSmEe-uuMlJ5b7pTQ" elementId="com.jaspersoft.studio.editor.preview.reportstate">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -207,7 +213,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_uFVU8MSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_bb9WwMauEe-oGd3bTJxewg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_teAPN8SmEe-uuMlJ5b7pTQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qvesIM2pEe-PUvWh3tk9zg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_teAPN8SmEe-uuMlJ5b7pTQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_uFVU8cSmEe-uuMlJ5b7pTQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -225,7 +231,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_uFWjEsSmEe-uuMlJ5b7pTQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_bcCPQMauEe-oGd3bTJxewg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_td-aFsSmEe-uuMlJ5b7pTQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qvi9kM2pEe-PUvWh3tk9zg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_td-aFsSmEe-uuMlJ5b7pTQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GfwfEMatEe-Sfp49CT2Mig" elementId="com.jaspersoft.studio.graphic.text" visible="false">
         <tags>Draggable</tags>
