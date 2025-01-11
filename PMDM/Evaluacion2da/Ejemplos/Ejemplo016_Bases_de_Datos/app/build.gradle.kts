@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo016_bases_de_datos"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo016_bases_de_datos"

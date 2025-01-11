@@ -8,14 +8,16 @@ import androidx.core.view.WindowInsetsCompat
 import com.maraloedev.ejemplo015_shared_preferences.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Obtiene las preferencias compartidas en modo privado
+        // Recupero las preferencias compartidas en modo privado
         val sharedPrefLectura = getSharedPreferences("preferencias", MODE_PRIVATE)
 
         // Lee los valores almacenados de nombre y contraseña
@@ -26,9 +28,8 @@ class MainActivity : AppCompatActivity() {
         binding.usuario = Usuario(nombre!!, contrasena!!)
 
 
-
         binding.bGuardar.setOnClickListener {
-            // Obtiene los valores ingresados por el usuario
+            // Recojo los valores ingresados por el usuario
             val nombre = binding.tietNombre.text.toString()
             val contrasena = binding.tietContrasena.text.toString()
 
