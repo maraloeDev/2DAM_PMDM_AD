@@ -19,7 +19,7 @@ public class HibernateUtils {
 			config.configure().addResource("\\entities\\Empleado.hbm.xml");
 			config.configure().addResource("\\entities\\Departamento.hbm.xml");
 			
-			//Se contruye la SessionFactory
+			//Se construye la SessionFactory
 			ServiceRegistry sr = (ServiceRegistry) new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
 			return (SessionFactory) config.buildSessionFactory((org.hibernate.service.ServiceRegistry) sr);
 		} catch (Throwable ex) {
