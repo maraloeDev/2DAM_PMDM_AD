@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @Controller
 public class Controlador {
 	
-	@GetMapping({"/", "/index"})
+	@GetMapping({"/" ,"/index"})
 	public String viewPage(HttpServletRequest request) {
 		request.setAttribute("nombre", "Eduardo");
 		request.setAttribute("grupo", "2º DAM");
