@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.ui.Model; // Asegúrate de importar esta clase
 
 @Controller
-
 public class PersonaController {
 	
 	@GetMapping({"/", "/lista2"})
@@ -27,5 +26,4 @@ public class PersonaController {
 		modelo.addAttribute("personas", personas);
 		return "lista2";
 	}
-
 }
