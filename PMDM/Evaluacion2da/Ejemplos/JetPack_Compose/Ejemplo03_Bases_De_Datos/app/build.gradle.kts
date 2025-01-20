@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.maraloedev.ejemplo02_variables"
+    namespace = "com.maraloedev.ejemplo03_bases_de_datos"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.maraloedev.ejemplo02_variables"
+        applicationId = "com.maraloedev.ejemplo03_bases_de_datos"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -59,8 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.runtime.ktx)
-    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
