@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Ejercicio014_Contador</string>
-    <string name="TextView_Contador">0</string>
-    <string name="Button_Empezar_Contar">Empezar a contar</string>
-    <string name="Button_Contar">Contar</string>
-    <string name="Button_Volver">Volver</string>
-</resources>

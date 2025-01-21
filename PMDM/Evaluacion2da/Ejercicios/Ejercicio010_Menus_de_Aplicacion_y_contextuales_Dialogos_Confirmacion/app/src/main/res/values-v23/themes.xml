@@ -1,9 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
-    <style name="Theme.Ejercicio010_Menus_de_Aplicacion_y_contextuales_Dialogos_Confirmacion" parent="Base.Theme.Ejercicio010_Menus_de_Aplicacion_y_contextuales_Dialogos_Confirmacion">
-        <!-- Transparent system bars for edge-to-edge. -->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
-    </style>
-</resources>
