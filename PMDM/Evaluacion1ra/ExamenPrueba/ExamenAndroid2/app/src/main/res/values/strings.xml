@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExamenAndroid2</string>
+    <string name="TextView_Nombre">Nombre</string>
+    <string name="Hint_InserteNombre">Inserte Nombre</string>
+    <string name="TextView_Sexo">Sexo</string>
+    <string name="RadioButton_Hombre">Hombre</string>
+    <string name="RadioButton_Mujer">Mujer</string>
+    <string name="Button_Anadir">Añadir</string>
+    <string name="ToggleButton_ActivarDesactivar">OFF</string>
+    <string name="Button_MostrarLista">Mostrar Lista</string>
+
+
+</resources>

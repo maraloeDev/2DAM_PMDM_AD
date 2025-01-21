@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ejercicio010_Menus_de_Aplicacion_y_contextuales_Dialogos_Confirmacion" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Ejercicio010_Menus_de_Aplicacion_y_contextuales_Dialogos_Confirmacion" parent="Base.Theme.Ejercicio010_Menus_de_Aplicacion_y_contextuales_Dialogos_Confirmacion" />
+</resources>

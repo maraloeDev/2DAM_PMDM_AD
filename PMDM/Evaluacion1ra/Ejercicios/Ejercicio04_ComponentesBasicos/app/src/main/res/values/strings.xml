@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ejercicio04_ComponentesBasicos</string>
+    <string name="Button_Uno">1</string>
+    <string name="Button_Dos">2</string>
+    <string name="Button_Tres">3</string>
+    <string name="Button_Cuatro">4</string>
+    <string name="Button_Cinco">5</string>
+    <string name="Button_Seis">6</string>
+    <string name="Button_Siete">7</string>
+    <string name="Button_Nueve">9</string>
+    <string name="Button_Ocho">8</string>
+    <string name="Button_Cero">0</string>
+    <string name="CheckBox_MostrarOcultar">Mostrar contraseña</string>
+    <string name="Button_Validar">Validar</string>
+</resources>

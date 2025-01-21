@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Ejercicio06_Cafetera</string>
+    <string name="CheckBox_Azucar">Extra Azucar</string>
+    <string name="Switch_Si_No">OFF</string>
+    <string name="Button_Servir_Cafe">Servir Cafe</string>
+
+    <string-array name="Spinner_TiposCafe">
+        <item>Café Bombón</item>
+        <item>Café Solo</item>
+        <item>Café Capuchino</item>
+        <item>Café Descafeinado</item>
+        <item>Café Mocca</item>
+        <item>Café Espresso</item>
+        <item>Macchiato</item>
+        <item>Flat White</item>
+        <item>Café au lait</item>
+        <item>Café Vienés</item>
+        <item>Irish Coffee</item>
+        <item>Affogato</item>
+        <item>Café con leche</item>
+        <item>Café Turco</item>
+        <item>Café Dalgona</item>
+        <item>Café Vietnamita</item>
+        <item>Kopi</item>
+        <item>Kopi Luwak</item>
+        <item>Yuenyeung</item>
+        <item>Kopi Tiam</item>
+        <item>Bunna</item>
+        <item>Café Touba</item>
+        <item>Café Árabe</item>
+        <item>Café con jengibre</item>
+        <item>Café Americano</item>
+        <item>Cold Brew</item>
+        <item>Iced Coffee</item>
+        <item>Frappuccino</item>
+        <item>Nitro Cold Brew</item>
+        <item>Mocha</item>
+        <item>Café Cubano</item>
+        <item>Café de Olla</item>
+        <item>Tinto</item>
+        <item>Café Sombra (o Café de la Olla)</item>
+        <item>Café de Pota (México)</item>
+        <item>Café Irlandés</item>
+        <item>Café de Cortado</item>
+        <item>Café de Sésamo (Japón)</item>
+        <item>Café de Almendra (o Café de Leche de Almendra)</item>
+        <item>Café con Canela</item>
+        <item>Affogato al Caffè</item>
+        <item>Café de Coco</item>
+        <item>Café con Leche de Soja</item>
+        <item>Café con Azúcar de Coco</item>
+        <item>Café Lungo</item>
+        <item>Café Frappé (Grecia)</item>
+        <item>Café de Huevo (Vietnam)</item>
+        <item>Café con Leche de Avena</item>
+        <item>Café Ciego (Espresso sin filtrar)</item>
+        <item>Café de Sirope de Arce</item>
+        <item>Café de Leche Evaporada (o Café con Leche Condensada)</item>
+        <item>Café en Frío (Cold Drip)</item>
+        <item>Café de Nuez (o Café con Nuez)</item>
+        <item>Café al Vino Tinto</item>
+        <item>Café de Mantequilla (o Bulletproof Coffee)</item>
+        <item>Café de Cardamomo (en la cultura árabe)</item>
+        <item>Café de Moka (Moka Pot)</item>
+        <item>Café estilo Sifón (Syphon Coffee)</item>
+    </string-array>
+
+</resources>
