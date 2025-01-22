@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo01_hola_jetpack_compose"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo01_hola_jetpack_compose"
@@ -47,6 +47,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {

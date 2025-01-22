@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo014_navigation_drawer"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo014_navigation_drawer"
@@ -36,6 +36,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {

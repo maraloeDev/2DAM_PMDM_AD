@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo07_menuspersonalizados"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo07_menuspersonalizados"
@@ -36,6 +36,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {

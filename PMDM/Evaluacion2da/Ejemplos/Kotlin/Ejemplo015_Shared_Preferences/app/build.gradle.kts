@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo015_shared_preferences"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo015_shared_preferences"
@@ -38,6 +38,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {

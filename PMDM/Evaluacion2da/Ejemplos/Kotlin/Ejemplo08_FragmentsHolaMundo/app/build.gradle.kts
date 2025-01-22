@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.ejemplo08_fragmentsholamundo"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.maraloedev.ejemplo08_fragmentsholamundo"
@@ -37,6 +37,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
