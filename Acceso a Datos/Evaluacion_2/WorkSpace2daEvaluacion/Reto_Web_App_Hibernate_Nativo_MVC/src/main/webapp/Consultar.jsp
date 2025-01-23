@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<%-- Mostrar mensaje de error si no se encuentra el registro --%>
+	<%-- Muestro el mensaje de error si no se encuentra el registro --%>
 	<%
     String mensajeError = (String) request.getAttribute("mensajeError");
     if (mensajeError != null) {
@@ -18,7 +18,7 @@
     }
 %>
 
-	<%-- Mostrar los campos con los datos obtenidos, pero deshabilitados --%>
+	<%-- MRecupero los atributos escritos por el usuario en Registro,JSP --%>
 	<%
     String dni = (String) request.getAttribute("dni");
     String nombre = (String) request.getAttribute("nombre");
@@ -28,6 +28,7 @@
     String numeroRegistro = (String) request.getAttribute("numeroRegistro");
 %>
 
+    <%-- Muestro los datos del registro deshabilitando los campos --%>
 	<table border="2" align="center">
 		<tr>
 			<td colspan="2" align="center"><h1>SEDE ELECTRÓNICA GF</h1></td>

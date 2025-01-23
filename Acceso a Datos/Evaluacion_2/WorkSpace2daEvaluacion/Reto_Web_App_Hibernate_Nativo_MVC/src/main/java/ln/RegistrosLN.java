@@ -7,8 +7,15 @@ import entities.Registros;
 
 public class RegistrosLN {
 
+	//Creo un objeto de la clase RegistrosDAO para poder llamar a sus métodos
 	RegistrosDAO registroDAO = new RegistrosDAO();
 
+	/**
+	 * Método que inserta un registro en la base de datos
+	 * y comprueba que los datos sean correctos, 
+	 * intenta llamar al método insertarRegistro de la clase RegistrosDAO para insertar el registro
+	 * 
+	 */
 	public Registros insertarRegistro(String numeroRegistro, String dniSolicitante, String nombreSolicitante,
 			String apellidosSolicitante, String tramite, String entidad) throws Exception {
 
@@ -27,12 +34,10 @@ public class RegistrosLN {
 			return null;
 		}
 
-		// Llamamos al método DAO para insertar el registro
 		try {
 			return registroDAO.insertarRegistro(numeroRegistro, dniSolicitante, nombreSolicitante, apellidosSolicitante,
 					tramite, entidad);
 		} catch (Exception e) {
-			// Manejar cualquier excepción que se produzca en la capa DAO
 			
 			throw new Exception(e.getMessage());
 

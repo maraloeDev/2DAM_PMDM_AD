@@ -13,6 +13,7 @@ import entities.Entidades;
 public class EntidadesDAO {
 	private DataSource dataSource;
 
+	// Metodo  en el que realizo la conexion con la base
 	public EntidadesDAO() {
 		try {
 			InitialContext ctx = new InitialContext();
@@ -22,9 +23,14 @@ public class EntidadesDAO {
 		}
 	}
 
+	/**
+	 * Metodo en el que creo una lista de entidades
+	 * Creo una consulta para obtener todas las entidades y almacenarlas en la lista
+	 * @return
+	 */
 	public List<Entidades> obtenerEntidades() {
 		List<Entidades> entidades = new ArrayList<>();
-		String query = "SELECT id, nombre FROM entidades";
+		String query = "SELECT * FROM entidades";
 		try (Connection conn = dataSource.getConnection();
 				PreparedStatement stmt = conn.prepareStatement(query);
 				ResultSet rs = stmt.executeQuery()) {

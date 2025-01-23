@@ -39,9 +39,10 @@
 				<td><label for="entidad"><b>ENTIDAD:</b></label></td>
 				<td><select name="entidad">
 						<%
-						// Suponemos que "entidades" es una lista de objetos Entidades enviada desde el servlet
+						// Recupero el atributo de la request que contiene la lista de entidades
 						List<Entidades> entidades = (List<Entidades>) request.getAttribute("entidades");
 
+						// Si la lista no es nula y no está vacía, muestro las entidades
 						if (entidades != null && !entidades.isEmpty()) {
 							for (Entidades entidad : entidades) {
 						%>

@@ -25,14 +25,12 @@
 			</td>
 		</tr>
 		<tr align="right">
-			<!-- Formulario para "Nuevo Registro" -->
 			<td>
 				<form action="ServletRegistro" method="get">
 					<input type="submit" value="Nuevo Registro">
 				</form>
 			</td>
 
-			<!-- Formulario para "Consulta Registro" -->
 			<td>
 				<form action="Buscar.jsp" method="get">
 					<input type="submit" value="Consulta Registro">

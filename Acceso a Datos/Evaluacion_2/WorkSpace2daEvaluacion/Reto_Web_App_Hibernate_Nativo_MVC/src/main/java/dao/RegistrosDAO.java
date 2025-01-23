@@ -15,10 +15,26 @@ import entities.Registros;
 public class RegistrosDAO {
 	private DataSource dataSource;
 
+	/**
+	 * Metodo para insertar un registro en la base de datos
+	 * Recupero la conexion con la base de datos
+	 * compruebo si la conexion es distinta de null
+	 * si es asi, creo una consulta en la que busco la entidad por su id
+	 * preparo la consulta y la ejecuto
+	 * creo una entidad vacia para luego asignarle los valores
+	 * si sigue la ejecucion, le asigna el valor de la entidad a la variable ent
+	 * si es nulo, lanza una excepcion (LINEAS 32-50)
+	 * 
+	 * creo una consulta en la que busco 
+	 * si el numero de registro ya existe
+	 * y si es asi, lanzo una excepcion (LINEAS 62-67)
+	 * 
+	 * En la ultima consulta, inserto los valores en la tabla registros
+	 * estableciendo los valores de los parametros, y actualizo la tabla (LINEAS 67-79)
+	 * 	 */
 	public Registros insertarRegistro(String numeroRegistro, String dniSolicitante, String nombreSolicitante,
 			String apellidosSolicitante, String tramite, String entidad) throws Exception {
 
-		// Si todo está correcto, se inserta el registro en la base de datos
 
 		Connection conn = null;
 		try {
@@ -45,9 +61,6 @@ public class RegistrosDAO {
 				stmt3.setString(1, numeroRegistro);
 				ResultSet rs2 = stmt3.executeQuery();
 				if (rs2.next()) {
-					// Mostrar error de No se ha registrado el tramite. Error al realizar la
-					// grabación y envialo a mensaje.jsp hazlo con un request.setAttribute
-					// "mensajeError" y redirige a mensaje.jsp"
 					throw new Exception("No se ha registrado el tramite. Error al realizar la grabación");
 				}
 
