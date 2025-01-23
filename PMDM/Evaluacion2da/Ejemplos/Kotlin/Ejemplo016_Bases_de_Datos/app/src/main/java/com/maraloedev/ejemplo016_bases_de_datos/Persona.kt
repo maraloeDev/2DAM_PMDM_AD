@@ -9,13 +9,13 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "persona")
 data class Persona(
     // Clave primaria que autogenera su valor.
-    @PrimaryKey(autoGenerate = true) var id: String = 0,
+    @PrimaryKey(autoGenerate = true) var id: String = "0",
 
     // Columna para el nombre de la persona.
     @ColumnInfo(name = "nombre") val nombre: String = "",
 
     // Columna para la edad de la persona.
-    @ColumnInfo(name = "edad") val edad: String = 0,
+    @ColumnInfo(name = "edad") val edad: String = "0",
 
     // Columna para la dirección de la persona.
     @ColumnInfo(name = "direccion") val direccion: String = ""

@@ -3,3 +3,5 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
 }
+val compileSdkVersion by extra(33)
+val buildToolsVersion by extra("35.0.0")

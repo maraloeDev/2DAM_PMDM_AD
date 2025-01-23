@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio09_Menus_de_aplicacion_y_contextuales_y_Dialogos</string>
+    <string name="Button_Finalizar">Finalizar</string>
+    <string name="Button_Finalizar_Tambien">Finalizar Tambien</string>
+</resources>

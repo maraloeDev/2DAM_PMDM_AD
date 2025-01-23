@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maraloedev.proyectodiciembre_eduardo_martin_sonseca"
-    compileSdk = 35
+    compileSdkVersion(rootProject.extra["compileSdkVersion"] as Int)
 
     defaultConfig {
         applicationId = "com.maraloedev.proyectodiciembre_eduardo_martin_sonseca"
@@ -37,6 +37,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = rootProject.extra["buildToolsVersion"] as String
 
 }
 
