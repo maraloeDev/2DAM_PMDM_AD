@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio018_SharedPreferences_SQLite_y_Fragments</string>
+    <string name="TextView_Nombre">Nombre</string>
+    <string name="hint_Introduce_un_nombre">Introduce un nombre</string>
+    <string name="TextView_Numero_de_Telefono">Numero de telefono</string>
+    <string name="hint_Introduce_un_Numero_de_telefono">Introduce un numero de telefono</string>
+    <string name="Button_Guardar">Guardar</string>
+    <string name="Button_Finalizar">Finalizar</string>
+    <string name="Button_Historico">Historico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

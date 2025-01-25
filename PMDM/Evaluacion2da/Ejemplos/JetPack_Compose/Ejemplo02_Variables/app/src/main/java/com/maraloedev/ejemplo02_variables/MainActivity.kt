@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material3.*
@@ -39,6 +40,8 @@ fun InterfazPrincipal() {
     val listaPersonas = remember { mutableStateListOf<Persona>() }
     val radioButtonOption = listOf("Hombre", "Mujer")
     val (selectedOption, onOptionSelected) = remember { mutableStateOf(radioButtonOption[0]) }
+    var expanded by remember { mutableStateOf(false) } // Controla si el menú está visible
+    var optselected by remember { mutableStateOf("Selecciona una opción") } // Opción seleccionada
 
     if (isVisibility) {
         Column {
@@ -116,24 +119,44 @@ fun InterfazPrincipal() {
                     ) {
                         Text("Mostrar datos")
                     }
+
+                    DropdownMenu(
+                        expanded = expanded,
+                        onDismissRequest = { expanded = false } // Se cierra el menú si se hace clic fuera
+                    ) {
+                        DropdownMenuItem(
+                            text = { Text("Opción 1") },
+                            onClick = {
+                                optselected = "Opción 1"
+                                expanded = false // Cerrar menú
+                            }
+                        )
+                        DropdownMenuItem(
+                            text = { Text("Opción 2") },
+                            onClick = {
+                                optselected = "Opción 2"
+                                expanded = false // Cerrar menú
+                            }
+                        )
+                        DropdownMenuItem(
+                            text = { Text("Opción 3") },
+                            onClick = {
+                                optselected = "Opción 3"
+                                expanded = false // Cerrar menú
+                            }
+                        )
+                    }
+                }
                 }
             }
 
             // Mostrar la lista de personas usando LazyColumn
-            LazyColumn(
-                modifier = Modifier
-                    .padding(vertical = 25.dp)
-            ) {
-                
-                items(listaPersonas) { item ->
-                    Text(
-                        text = item.nombre,
-                        modifier = Modifier.padding(8.dp)
-                    )
+            LazyColumn {
+                itemsIndexed(listaPersonas) { index, item ->
+                    Text(listaPersonas[index].nombre + " " + listaPersonas[index].edad)
                 }
-            }
         }
-    } else {
+    } //else {
         // Botón para mostrar el formulario de nuevo
         Button(onClick = { isVisibility = true }) {
             Text("Volver")
@@ -142,4 +165,3 @@ fun InterfazPrincipal() {
         // Texto para mostrar los datos de la persona
         Text("Hola ${listaPersonas.lastOrNull()?.nombre ?: ""} ${selectedOption}")
     }
-}
