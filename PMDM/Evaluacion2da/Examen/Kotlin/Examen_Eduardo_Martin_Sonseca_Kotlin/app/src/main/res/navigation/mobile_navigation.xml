@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/item_Registrar">
+    <fragment
+        android:id="@+id/item_Registrar"
+        android:name="com.maraloedev.examen_eduardo_martin_sonseca_kotlin.ui.Registro.Fragment_RegistrarUsuario"
+        android:label="Fragment_RegistrarUsuario" >
+        <action
+            android:id="@+id/action_fragment_RegistrarUsuario_to_fragment_Listar_Usuarios"
+            app:destination="@id/item_ListarUsuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_ListarUsuario"
+        android:name="com.maraloedev.examen_eduardo_martin_sonseca_kotlin.ui.Listar_Usuarios.Fragment_Listar_Usuarios"
+        android:label="fragment__listar__usuarios"
+        tools:layout="@layout/fragment__listar__usuarios" >
+        <action
+            android:id="@+id/action_fragment_Listar_Usuarios_to_fragment_RegistrarUsuario"
+            app:destination="@id/item_Registrar" />
+    </fragment>
+</navigation>
