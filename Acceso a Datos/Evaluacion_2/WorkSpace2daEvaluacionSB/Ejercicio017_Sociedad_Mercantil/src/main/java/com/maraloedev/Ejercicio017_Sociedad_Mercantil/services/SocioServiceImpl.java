@@ -19,7 +19,6 @@ public class SocioServiceImpl implements GenericService<Socio>{
 
 	@Override
 	public List<Socio> findAll() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 

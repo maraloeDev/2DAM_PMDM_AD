@@ -19,7 +19,6 @@ public class ParticipacionServiceImpl implements GenericService<Participacion>{
 
 	@Override
 	public List<Participacion> findAll() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 

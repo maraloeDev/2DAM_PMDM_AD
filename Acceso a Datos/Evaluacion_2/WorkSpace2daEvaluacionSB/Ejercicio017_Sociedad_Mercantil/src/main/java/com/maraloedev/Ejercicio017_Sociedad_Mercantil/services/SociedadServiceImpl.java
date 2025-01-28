@@ -17,7 +17,6 @@ public class SociedadServiceImpl implements GenericService<Sociedad>{
 
 	@Override
 	public List<Sociedad> findAll() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 

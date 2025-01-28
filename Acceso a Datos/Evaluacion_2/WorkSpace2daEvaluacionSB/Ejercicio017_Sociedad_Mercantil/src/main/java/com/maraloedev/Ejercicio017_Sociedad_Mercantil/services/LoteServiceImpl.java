@@ -19,7 +19,6 @@ public class LoteServiceImpl implements GenericService<Lote>{
 
 	@Override
 	public List<Lote> findAll() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 
