@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Ejercicio016_NumeroAsync</string>
-    <string name="TextView_Numero">Numero</string>
-    <string name="TextView_Numero_aleatorio">0</string>
-    <string name="Button_Start">Start</string>
-</resources>
