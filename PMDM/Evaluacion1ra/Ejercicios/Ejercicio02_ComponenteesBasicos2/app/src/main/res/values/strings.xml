@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ejercicio02_ComponenteesBasicos2</string>
+    <string name="PlaceHoderNumbre_Usuario">Introduce un nombre de usuario</string>
+    <string name="RadioButton_Soltero">Soltero</string>
+    <string name="RadioButton_Casado">Casado</string>
+    <string name="CheckBox_Futbol">Futbol</string>
+    <string name="CheckBox_Baloncesto">Baloncesto</string>
+    <string name="CheckBox_Tenis">Tenis</string>
+    <string name="Button_Guardar">Guardar</string>
+    <string name="PlaceHolder_Edad">Introduce una edad</string>
+    <string-array name="Spinner_ComunidadesAutonomas">
+        <item><b>Valladolid</b></item>
+        <item><b>León</b></item>
+        <item><b>Soria</b></item>
+    </string-array>
+</resources>

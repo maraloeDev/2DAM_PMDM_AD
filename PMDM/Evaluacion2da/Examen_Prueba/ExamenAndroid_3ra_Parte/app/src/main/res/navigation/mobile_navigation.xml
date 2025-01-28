@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/item_Registros">
+    <fragment
+        android:id="@+id/item_Registros"
+        android:name="com.maraloedev.examenandroid_3ra_parte.ui.Registro.FragmentRegistro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_fragmentRegistro_to_fragment_Usuarios_Registrados"
+            app:destination="@id/item_UsuariosRegistrados" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_UsuariosRegistrados"
+        android:name="com.maraloedev.examenandroid_3ra_parte.ui.UsuariosRegistrados.Fragment_Usuarios_Registrados"
+        android:label="fragment__usuarios__registrados"
+        tools:layout="@layout/fragment__usuarios__registrados" >
+        <action
+            android:id="@+id/action_fragment_Usuarios_Registrados_to_fragmentRegistro"
+            app:destination="@id/item_Registros" />
+    </fragment>
+</navigation>

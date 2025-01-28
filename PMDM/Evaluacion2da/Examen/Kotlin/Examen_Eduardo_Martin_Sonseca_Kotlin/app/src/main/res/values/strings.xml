@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Examen_Eduardo_Martin_Sonseca_Kotlin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Item_Registrar">Registro Usuario</string>
+    <string name="Item_Listar_Usuario">Listar Usuarios</string>
+    <string name="TextView_El_numero_de_usuarios">El numero de usuarios es de</string>
+    <string name="TextView_Numero_Users">0</string>
+</resources>

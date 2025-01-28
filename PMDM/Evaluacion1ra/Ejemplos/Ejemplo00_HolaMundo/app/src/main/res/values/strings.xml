@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo00_HolaMundo</string>
+    <string name="Hola_Mundo">Hola Mundo</string>
+    <string name="boton_Saludar">Saludar desde Strings.xml</string>
+    <string name="Saludo_log">Saludo Log</string>
+    <string name="belligoal">Belligoal</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejercicio010_Menus_de_aplicaciones</string>
+    <string name="Button_Borrar">Borrar</string>
+    <string name="Button_Anadir">Añadir</string>
+    <string name="hint_Introduce_un_Precio_para_el_producto">Introduce un precio para el producto</string>
+    <string name="hint_Introduce_nombre_producto">Introduce un nombre para el producto</string>
+    <string name="TextView_Introduce_un_precio_de_producto">Introduce un precio para el producto</string>
+    <string name="TextView_Lista_de_la_compra">Lista de la compra</string>
+    <string name="TextView_Introduce_un_nombre_de_producto">Introduce un nombre de producto</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio018_SharedPreferences_y_SQLite_y_Fragments</string>
+    <string name="TextView_Nombre">Nombre</string>
+    <string name="TextView_Numero_de_telefono">Numero de telefono</string>
+    <string name="Button_Guardar">Guardar</string>
+    <string name="Button_Finalizar">Finalizar</string>
+    <string name="Button_Historico">Historico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TextView_Listado_Usuario" />
+    <string name="Button_BorrarHistorico">Borrar Historico</string>
+</resources>
