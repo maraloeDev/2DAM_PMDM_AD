@@ -48,7 +48,6 @@ public class CentroController {
 	@DeleteMapping("/centro/{id}")
 	public void eliminarCentro(@PathVariable Long id) {
 		gs.deleteById(id);
-		
 	}
 	
 
