@@ -1,6 +1,7 @@
 package com.maraloedev.Ejercicio018_Skills.entities;
 
 import java.util.List;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

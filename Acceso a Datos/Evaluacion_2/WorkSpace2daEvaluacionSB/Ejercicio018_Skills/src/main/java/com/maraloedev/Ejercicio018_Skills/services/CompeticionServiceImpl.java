@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.maraloedev.Ejercicio018_Skills.entities.Centro;
 import com.maraloedev.Ejercicio018_Skills.entities.Competicion;
 import com.maraloedev.Ejercicio018_Skills.repositories.CompeticionRepository;
 

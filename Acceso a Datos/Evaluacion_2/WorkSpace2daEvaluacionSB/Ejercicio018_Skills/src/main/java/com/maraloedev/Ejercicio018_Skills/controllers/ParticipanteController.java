@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.maraloedev.Ejercicio018_Skills.entities.Centro;
-import com.maraloedev.Ejercicio018_Skills.entities.Modalidad;
 import com.maraloedev.Ejercicio018_Skills.entities.Participante;
 import com.maraloedev.Ejercicio018_Skills.services.GenerateService;
 
@@ -40,7 +38,7 @@ public class ParticipanteController {
 	}
 	
 	//BUSCAR
-	@GetMapping("/modalidad/{id}")
+	@GetMapping("/participante/{id}")
 		public void buscarParticipante(@PathVariable Long id) {
 			gs.findById(id);
 			

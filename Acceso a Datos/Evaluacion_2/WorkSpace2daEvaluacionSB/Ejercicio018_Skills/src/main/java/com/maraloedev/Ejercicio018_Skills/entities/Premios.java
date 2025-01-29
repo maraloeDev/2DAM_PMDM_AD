@@ -20,7 +20,7 @@ public class Premios {
     
     @Column(name = "cuantia")
     private int cuantia;
-
+    
     @ManyToOne
     @JoinColumn(name = "modalidad_id")
     private Modalidad modalidad;

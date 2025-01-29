@@ -23,14 +23,10 @@ public class Participante {
     
     @Column(name = "puntuacion")
     private int puntuacion;
-
+    
     @ManyToOne
     @JoinColumn(name = "centro_id")
     private Centro centro;
-    
-    @ManyToOne
-    @JoinColumn(name = "competicion_id")
-    private Competicion competicion;
     
     @ManyToOne
     @JoinColumn(name = "tutor_id")
